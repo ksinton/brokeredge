@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body
-        className="text-forground-light"
+        className="text-forground-light bg-white"
     >
     <Header/>
     {children}

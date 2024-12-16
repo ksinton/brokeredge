@@ -262,8 +262,8 @@ export default function Home() {
                   </div>
 
                   <button role="button"
-                          className="bg-transparent border-[1px] border-white border-solid px-3 md:px-6 py-1 rounded-lg absolute top-0 md:top-[calc(50%-36px)] left-auto md:right-[30px] right-[21px] md:right-auto -translate-y-[22px] md:-translate-y-1/2 md:text-lg whitespace-nowrap">
-                      Sell your business
+                          className="bg-transparent border-[1px] border-white border-solid px-3 md:px-6 py-1 rounded-lg absolute top-0 md:top-[calc(50%-36px)] left-auto md:right-[30px] right-[21px] -translate-y-[22px] md:-translate-y-1/2 md:text-lg whitespace-nowrap">
+                      Sell Your Business
                   </button>
               </div>
           </div>
@@ -277,7 +277,7 @@ export default function Home() {
                   <div>3</div>
                   <div>4</div>
                   <div>5</div>
-                  <div className="pl-8">Next >></div>
+                  <div className="pl-8">Next &gt;&gt;</div>
               </div>
           </div>
       </>

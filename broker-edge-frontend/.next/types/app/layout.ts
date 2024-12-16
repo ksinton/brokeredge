@@ -1,4 +1,4 @@
-// File: /Users/kimsinton/src/broker-edge/src/app/layout.tsx
+// File: /Users/kimsinton/src/broker-edge/broker-edge-frontend/src/app/layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
