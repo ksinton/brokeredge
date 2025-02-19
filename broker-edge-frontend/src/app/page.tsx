@@ -1,4 +1,5 @@
 import React from 'react';
+import  Link from 'next/link';
 import Listings from "./components/Listings";
 import listingInterface from "./types/ListingInterface";
 
@@ -261,10 +262,13 @@ export default function Home() {
                       </select>
                   </div>
 
-                  <button role="button"
-                          className="bg-transparent border-[1px] border-white border-solid px-3 md:px-6 py-1 rounded-lg absolute top-0 md:top-[calc(50%-36px)] left-auto md:right-[30px] right-[21px] -translate-y-[22px] md:-translate-y-1/2 md:text-lg whitespace-nowrap">
-                      Sell Your Business
-                  </button>
+                  <Link href="/signup/intro">
+                      <button role="button"
+                              className="bg-transparent border-[1px] border-white border-solid px-3 md:px-6 py-1 rounded-lg absolute top-0 md:top-[calc(50%-36px)] left-auto md:right-[30px] right-[21px] -translate-y-[22px] md:-translate-y-1/2 md:text-lg whitespace-nowrap">
+                          Sell Your Business
+                      </button>
+                  </Link>
+
               </div>
           </div>
 

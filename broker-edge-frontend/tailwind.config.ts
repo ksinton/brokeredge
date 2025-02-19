@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'brand-primary': "#17843d",
+        'brand-primary': "#326329",
         'forground-light': "#fff",
         'forground-form-field': "#000",
         'logo-text-color': "#027701",
@@ -17,8 +17,10 @@ export default {
         'top-menu-background': "#003258",
         'mobile-header-background': "#326427",
         'mobile-header-dark-background': "#0c5122",
+        'standard-text-color': "#333333" ,
       },
     },
   },
   plugins: [],
+
 } satisfies Config;

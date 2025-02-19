@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from 'react';
 import { Shadows_Into_Light } from 'next/font/google';
 import { ChevronRightIcon, Bars3Icon } from '@heroicons/react/24/solid';
+import Link from "next/link";
 
 const shadowsIntoLight = Shadows_Into_Light({
     subsets: ['latin'],
@@ -12,13 +13,15 @@ export default function Header() {
     return (
         <div className="bg-header-background w-full relative">
 
-            <Image
-                src="/logo.png"
-                width={148}
-                height={148}
-                alt="sjfhjksfhs"
-                className="z-10 absolute w-[74px] h-[74px] md:w-[111px] md:h-[111px] lg:w-[148px] lg:h-[148px] top-[27px] md:top-[44px] left-[10px] md:left-[33px]"
-            />
+            <Link href="/">
+                <Image
+                    src="/logo.png"
+                    width={148}
+                    height={148}
+                    alt="sjfhjksfhs"
+                    className="z-10 absolute w-[74px] h-[74px] md:w-[111px] md:h-[111px] lg:w-[148px] lg:h-[148px] top-[27px] md:top-[44px] left-[10px] md:left-[33px]"
+                />
+            </Link>
 
             <Bars3Icon className="h-8 w-8 absolute right-[7px] top-[3px] z-10 md:hidden"/>
 
@@ -27,7 +30,10 @@ export default function Header() {
                 <div className="hidden md:flex space-x-4 text-m">
                     <div className="flex space-x-1 items-center">
                         <ChevronRightIcon className="w-4 h-4"/>
-                        <div>Sell Your Business</div>
+                        <Link href="/signup/intro">
+                            <div>Sell Your Business</div>
+                        </Link>
+
                     </div>
                     <div className="flex space-x-1 items-center">
                         <ChevronRightIcon className="w-4 h-4"/>

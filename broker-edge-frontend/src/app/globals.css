@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.standard-button {
+  @apply bg-brand-primary text-forground-light py-2 px-4 rounded-lg;
+}
+
+.form-right-col {
+  @apply max-w-[400px];
+}

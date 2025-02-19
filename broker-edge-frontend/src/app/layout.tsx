@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import React from 'react';
+import ReactQueryProvider from "./utils/providers/ReactQueryProvider";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -31,12 +32,11 @@ export default function RootLayout({
     <body
         className="text-forground-light bg-white"
     >
-    <Header/>
-    {children}
-    <Footer/>
-
-
-
+    <ReactQueryProvider>
+      <Header/>
+      {children}
+      <Footer/>
+    </ReactQueryProvider>
     </body>
     </html>
 );
