@@ -1,4 +1,6 @@
 import express from "express";
+import {whitelistFields, truncateString} from "./utils/whiteListing";
+
 var bodyParser = require('body-parser');
 import cors from "cors";
 const db = require('./config/db');
@@ -18,10 +20,25 @@ app.get("/", (req: express.Request, res: express.Response) => {
 )
 
 app.post("/business", async (req: express.Request, res: express.Response) => {
+
         const data = req.body;
+
+        const allowedFields:any = ['businessName', 'phone', 'email', 'password'];
+        const cleanData = whitelistFields(data, allowedFields);
+
+        cleanData.businessName = truncateString(cleanData.businessName);
+        cleanData.phone = truncateString(cleanData.phone, 40);
+        cleanData.email = truncateString(cleanData.email);
+        cleanData.password = truncateString(cleanData.password);
+
+        if (cleanData.businessName === "" || cleanData.phone === "" || cleanData.email === "" || cleanData.password === "") {
+                res.json({success: false});
+        }
+
         console.log("data",data);
-        const userData = {email: data.email, password: data.password};
-        const businessData = {businessName: data.businessName, phone: data.phone};
+        console.log("cleanData",cleanData);
+        const userData = {email: cleanData.email, password: cleanData.password};
+        const businessData = {businessName: cleanData.businessName, phone: cleanData.phone};
         const newUserId:number  =  await addUser(db, userData);
         const result = await addBusiness(db, businessData, newUserId);
         res.json(result);

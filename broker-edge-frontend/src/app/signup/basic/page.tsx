@@ -84,6 +84,8 @@ export default function SignupBasic() {
                         defaultValue={business.name}
                         className="w-full border-brand-primary border-2 rounded-lg"
                         ref={nameField}
+                        pattern="[a-zA-Z0-9 _.\-@\(\)+!?&#39;&quot;]+"
+                        title="Only letters, numbers, spaces, underscores, periods, hyphens, @, parentheses, +, !, ?, single quotes, and double quotes are allowed."
                         required
                     />
                 </div>
@@ -95,6 +97,8 @@ export default function SignupBasic() {
                         defaultValue={business.phone}
                         className="w-full border-brand-primary border-2 rounded-lg"
                         ref={phoneField}
+                        pattern="[a-zA-Z0-9 .\-\(\)+]+"
+                        title="Only letters, numbers, spaces, periods, hyphens, parentheses, and + are allowed."
                         required
                     />
                 </div>
@@ -106,6 +110,8 @@ export default function SignupBasic() {
                         defaultValue={business.email}
                         className="w-full border-brand-primary border-2 rounded-lg"
                         ref={emailField}
+                        pattern="[a-zA-Z0-9 _.\-@\(\)+!?&#39;&quot;]+"
+                        title="Only letters, numbers, spaces, underscores, periods, hyphens, @, parentheses, +, !, ?, single quotes, and double quotes are allowed."
                         required
                     />
                 </div>
@@ -114,11 +120,12 @@ export default function SignupBasic() {
                 <div className="form-right-col mb-3 md:mb-0">
                     <input
                         type="password"
+                        defaultValue={business.password}
                         className="w-full border-brand-primary border-2 rounded-lg"
-                        pattern=".{10,}"
-                        required
-                        title="password must be at least 10 chracters"
+                        pattern="[a-zA-Z0-9 _.\-@\(\)+!?&#39;&quot;]{10,}"
+                        title="Only letters, numbers, spaces, underscores, periods, hyphens, @, parentheses, +, !, ?, single quotes, and double quotes are allowed. Also must be at least 10 chracters."
                         ref={passwordField}
+                        required
                     />
                 </div>
 
@@ -126,6 +133,7 @@ export default function SignupBasic() {
                 <div className="form-right-col">
                     <input
                         type="password"
+                        defaultValue={business.password}
                         className="w-full border-brand-primary border-2 rounded-lg"
                         ref={passwordFieldTwo}
                     />
