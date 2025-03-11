@@ -1,4 +1,4 @@
-exports.addUser = async function(db: any, data: any) {
+export const addUser = async function(db: any, data: any) {
 
     let newUserId;
 

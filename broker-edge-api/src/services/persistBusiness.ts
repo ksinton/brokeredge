@@ -1,4 +1,4 @@
-exports.addBusiness = async (db: any, businessData: object, userId: number): Promise<{ success: boolean }> => {
+export const addBusiness = async (db: any, businessData: object, userId: number): Promise<{ success: boolean }> => {
 
     try {
         const unixTimeStampForNow = Math.floor(Date.now() / 1000);

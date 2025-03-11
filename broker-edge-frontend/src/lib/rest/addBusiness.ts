@@ -3,6 +3,7 @@ import {Business} from "../store";
 async function postBusiness(business:Business) {
     const options = {
         method: "POST",
+        credentials: "include" as RequestCredentials, // Explicitly cast to correct type
         body: JSON.stringify({
             businessName: business.name,
             phone: business.phone,
