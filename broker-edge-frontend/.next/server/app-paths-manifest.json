@@ -1,6 +1,7 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/signup/categorization/page": "app/signup/categorization/page.js",
-  "/counter/page": "app/counter/page.js",
-  "/signup/basic/page": "app/signup/basic/page.js"
+  "/signup/basic/page": "app/signup/basic/page.js",
+  "/page": "app/page.js",
+  "/signup/intro/page": "app/signup/intro/page.js",
+  "/signup/categorization/page": "app/signup/categorization/page.js"
 }
