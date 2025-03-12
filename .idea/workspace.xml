@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d2f177b5-e0c2-43a5-b797-beb457c7d4ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/broker-edge-api/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker-edge-api/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker-edge-api/src/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker-edge-api/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker-edge-api/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/counter/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/basic/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/categorization/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/broker-edge-frontend/src/lib/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/app-build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/app-build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/images/Vx5jUFVZ-PJdp2mDLnp7vvMQJl-9TyKLVnSORJdCLT8/60.1734378964809.3yR5PS5T3Qee6nO8LPV5RvH9PeBU7RNgmNdlNhae0rk.Vy8iZGJlMi0xOTM3YWNiYjIyYyI.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/images/rIYo_3f-_DsG2Gq0dDlBK9xIuMDNcEcExeXNNJ7YqkE/60.1733283295506.J2rM7R7WVUi2pt0WL2TLpuEOQ8dk0yMayzlwwZLlkZw.Vy8iZGJlMi0xOTM3YWNiYjIyYyI.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/0.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/index.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/index.pack.gz.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/0.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/1.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/1.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/10.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/10.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/11.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/11.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/12.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/12.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/13.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/13.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/14.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/14.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/15.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/15.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/2.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/2.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/3.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/3.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/4.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/4.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/5.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/5.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/6.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/6.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/7.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/7.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/8.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/8.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/9.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/9.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/index.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/index.pack.gz.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/0.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/1.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/1.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/10.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/10.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/11.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/11.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/12.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/12.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/13.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/13.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/14.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/14.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/2.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/2.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/3.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/3.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/4.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/4.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/5.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/5.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/6.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/6.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/7.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/7.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/8.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/8.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/9.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/9.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/index.pack.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/index.pack.gz.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app-paths-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app-paths-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app/page_client-reference-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/middleware-build-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/middleware-build-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/next-font-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/next-font-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/next-font-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/next-font-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/vendor-chunks/@swc.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/vendor-chunks/@swc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/vendor-chunks/next.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/vendor-chunks/next.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/webpack-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/webpack-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app-pages-internals.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app-pages-internals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/main-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/main-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/css/app/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/css/app/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/media/3c0a36d4615ad53c-s.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/media/cedc0d4e6b719cc0-s.p.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/webpack/731afe6dcadb5526.webpack.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/webpack/app/layout.731afe6dcadb5526.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/webpack/webpack.731afe6dcadb5526.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/trace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/intro/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/intro/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/tailwind.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2qJPap6ainztT6MExD9pLY520C1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kimsinton/src/broker-edge/broker-edge-frontend/src/app/signup/basic&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/kimsinton/src/broker-edge/broker-edge-frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/basic" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app" />
+      <recent name="$PROJECT_DIR$/broker-edge-api/src/config" />
+      <recent name="$PROJECT_DIR$/broker-edge-api/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d2f177b5-e0c2-43a5-b797-beb457c7d4ff" name="Changes" comment="" />
+      <created>1734377770472</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734377770472</updated>
+      <workItem from="1734377771485" duration="21957000" />
+      <workItem from="1736705748678" duration="35643000" />
+      <workItem from="1737321867405" duration="65000" />
+      <workItem from="1737322889565" duration="28179000" />
+      <workItem from="1738378033741" duration="3057000" />
+      <workItem from="1739394456989" duration="109138000" />
+      <workItem from="1740347611718" duration="43107000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added white background to body&#10;Fixed position of sell your business button">
+      <option name="closed" value="true" />
+      <created>1734378309764</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734378309764</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed package JSON file">
+      <option name="closed" value="true" />
+      <created>1734379099172</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734379099172</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed package JSON file">
+      <option name="closed" value="true" />
+      <created>1734379123625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734379123625</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding unstaged files">
+      <option name="closed" value="true" />
+      <created>1734379315285</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734379315285</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added the rest API and end points for adding a business / user.  Connected with the front end.">
+      <option name="closed" value="true" />
+      <created>1739978830636</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739978830636</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added white Listing and Validation">
+      <option name="closed" value="true" />
+      <created>1740341979063</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740341979063</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added SQL for creating database">
+      <option name="closed" value="true" />
+      <created>1740348565397</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740348565397</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added SQL for creating database">
+      <option name="closed" value="true" />
+      <created>1740348568839</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740348568839</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added SQL for creating database from pgAdmin">
+      <option name="closed" value="true" />
+      <created>1740351017923</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740351017923</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adding missing whitelisting method">
+      <option name="closed" value="true" />
+      <created>1740756033767</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740756033767</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token">
+      <option name="closed" value="true" />
+      <created>1741728208126</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741728208126</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token">
+      <option name="closed" value="true" />
+      <created>1741728233969</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741728233969</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token">
+      <option name="closed" value="true" />
+      <created>1741743250394</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741743250394</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added white background to body&#10;Fixed position of sell your business button" />
+    <MESSAGE value="Fixed package JSON file" />
+    <MESSAGE value="Adding unstaged files" />
+    <MESSAGE value="Added the rest API and end points for adding a business / user.  Connected with the front end." />
+    <MESSAGE value="Added white Listing and Validation" />
+    <MESSAGE value="Added SQL for creating database" />
+    <MESSAGE value="Added SQL for creating database from pgAdmin" />
+    <MESSAGE value="Adding missing whitelisting method" />
+    <MESSAGE value="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token" />
+  </component>
+</project>
