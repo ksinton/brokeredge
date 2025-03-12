@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import bodyParser from "body-parser";
 
-// project imports
+// local project imports
 import {whitelistFields, truncateString} from "./utils/whiteListing";
 import { addBusiness } from "./services/persistBusiness";
 import { addUser } from "./services/persistUser";
