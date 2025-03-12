@@ -161,7 +161,7 @@
       <workItem from="1737322889565" duration="28179000" />
       <workItem from="1738378033741" duration="3057000" />
       <workItem from="1739394456989" duration="109138000" />
-      <workItem from="1740347611718" duration="43107000" />
+      <workItem from="1740347611718" duration="43415000" />
     </task>
     <task id="LOCAL-00001" summary="Added white background to body&#10;Fixed position of sell your business button">
       <option name="closed" value="true" />
@@ -267,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741743250394</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token">
+      <option name="closed" value="true" />
+      <created>1741743496285</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741743496285</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
