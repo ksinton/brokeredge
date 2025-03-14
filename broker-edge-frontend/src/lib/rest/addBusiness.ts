@@ -3,7 +3,6 @@ import {Business} from "../store";
 async function postBusiness(business:Business) {
     const options = {
         method: "POST",
-        credentials: "include" as RequestCredentials, // Explicitly cast to correct type
         body: JSON.stringify({
             businessName: business.name,
             phone: business.phone,
@@ -17,10 +16,8 @@ async function postBusiness(business:Business) {
     };
 
     try {
-        const response = await fetch(
-            "http://localhost:8000/business",
-            options
-        )
+        // @ts-ignore
+        let response = await fetch("http://brokeredge.com/api/business", options,);
         return await response.json();
     } catch(err: any) {
         console.error("Fetch Error", err);

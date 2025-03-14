@@ -13,6 +13,9 @@ export default function SignupCategorization() {
     const nameField = useRef<HTMLInputElement>(null);
     const phoneField = useRef<HTMLInputElement>(null);
     const emailField = useRef<HTMLInputElement>(null);
+    const passwordField = useRef<HTMLInputElement>(null);
+    const passwordFieldTwo = useRef<HTMLInputElement>(null);
+
 
     const business = useBusinessStore(state => state.business);
     const updateBusiness = useBusinessStore(state => state.updateBusiness);
@@ -20,7 +23,7 @@ export default function SignupCategorization() {
     const handleContinueClick = ():void => {
         console.log("inside handle click continue");
 
-        if (nameField.current === null || phoneField.current === null || emailField.current === null) {
+        if (nameField.current === null || phoneField.current === null || emailField.current === null || passwordField.current === null || passwordFieldTwo.current === null) {
             return;
         }
 
@@ -39,10 +42,22 @@ export default function SignupCategorization() {
             return;
         }
 
+        if (!passwordField.current.checkValidity()) {
+            passwordField.current.reportValidity();
+            return;
+        }
+
+        if (passwordField.current.value !== passwordFieldTwo.current.value) {
+            passwordFieldTwo.current.setCustomValidity("Password and Verify Password fields must match!");
+            passwordFieldTwo.current.reportValidity();
+            return
+        }
+
         const updatedBusiness: Business = {
             name: nameField.current.value + 1,
             phone: phoneField.current.value + 1,
             email: emailField.current.value + 1,
+            password: passwordField.current.value,
         };
 
         updateBusiness(updatedBusiness);
@@ -51,14 +66,14 @@ export default function SignupCategorization() {
     return (
         <div className="flex flex-col text-standard-text-color p-5">
 
-            <h1 className="text-2xl mb-6">List your business - Categorization </h1>
+            <h1 className="text-2xl mb-4 md:mb-6 text-brand-primary">List your business - Categorization </h1>
 
-            <div className="grid md:grid-cols-[auto_1fr] gap-1 md:gap-4">
+            <div className="grid md:grid-cols-[auto_1fr] gap-0.5 md:gap-4 pb-2 md:pb-5">
 
-                <div className="">Industry:</div>
+                <div className="standard-field-label">Industry</div>
                 <div className="form-right-col mb-3 md:mb-0">
 
-                    <select className="w-full border-brand-primary border-2 rounded-lg">
+                    <select className="standard-field h-8">
                         <option value="">Select One</option>
                         <option value="">Industry One</option>
                         <option value="">Industry Two</option>
@@ -66,43 +81,44 @@ export default function SignupCategorization() {
 
                 </div>
 
-                <div className="">Sub Industry::</div>
+                <div className="standard-field-label">Sub Industry</div>
                 <div className="form-right-col mb-3 md:mb-0">
-                    <select className="w-full border-brand-primary border-2 rounded-lg">
+                    <select className="standard-field h-8">
                         <option value="">Select One</option>
                         <option value="">Sub Industry One</option>
                         <option value="">Sub Industry Two</option>
                     </select>
                 </div>
 
-                <div className="">Business Model:</div>
+                <div className="standard-field-label">Business Model</div>
                 <div className="form-right-col mb-3 md:mb-0">
-                    <select className="w-full border-brand-primary border-2 rounded-lg">
+                    <select className="standard-field h-8">
                         <option value="">Select One</option>
                         <option value="">Business One</option>
                         <option value="">Business Two</option>
                     </select>
                 </div>
 
-                <div className="">Business Start Date:</div>
+                <div className="standard-field-label">Business Start Date</div>
                 <div className="form-right-col mb-3 md:mb-0 space-x-[10px]">
-                    <select className="w-[calc(66.6%-7px)] border-brand-primary border-2 rounded-lg">
+                    <select className="border-gray-700 border rounded-sm pl-1.5 pt-0.5 pb-0.5 w-[calc(66.6%-7px)] h-8">
                         <option value="">Month</option>
                         <option value="">Business One</option>
                         <option value="">Business Two</option>
                     </select>
-                    <select className="w-[calc(33.3%-3px)] border-brand-primary border-2 rounded-lg">
+                    <select className="border-gray-700 border rounded-sm pl-1.5 pt-0.5 pb-0.5 w-[calc(33.3%-3px)] h-8">
                         <option value="">Year</option>
                         <option value="">Business One</option>
                         <option value="">Business Two</option>
                     </select>
                 </div>
 
-                <div>&nbsp;</div>
+                <div className="h-4"></div>
                 <div className="flex justify-end max-w-[400px]">
                     <Link href="/signup/basic">
                         <button role="button" className="standard-button"
-                                onClick={handleContinueClick}>Continue &gt;&gt;</button>
+                                onClick={handleContinueClick}>Continue
+                        </button>
                     </Link>
                 </div>
 

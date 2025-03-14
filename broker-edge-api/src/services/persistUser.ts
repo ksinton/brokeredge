@@ -1,6 +1,6 @@
 export const addUser = async function(db: any, data: any) {
 
-    let newUserId;
+    let newUserId = null;
 
     try {
         const unixTimeStampForNow = Math.floor(Date.now() / 1000);
@@ -13,3 +13,17 @@ export const addUser = async function(db: any, data: any) {
         console.error(err);
     }
 };
+
+export const updateUser = async function(db: any, data: any) {
+
+    try {
+        const unixTimeStampForNow = Math.floor(Date.now() / 1000);
+        const query = "UPDATE business_user SET email = '\"+ data.email +\"', password = '"+ data.password +"', last_updated_timestamp = " + unixTimeStampForNow + " WHERE id = " + data.id;
+        console.log('query', query);
+        const result = await db.query(query);
+        return result.rowCount;
+    } catch (err) {
+        console.error(err);
+    }
+
+}

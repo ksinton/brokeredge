@@ -73,16 +73,16 @@ export default function SignupBasic() {
     return (
         <div className="flex flex-col text-standard-text-color p-5">
 
-            <h1 className="text-2xl mb-6">List your business - Basic Info </h1>
+            <h1 className="text-2xl mb-4 md:mb-6 text-brand-primary">List Your Business - Basic Info </h1>
 
-            <div className="grid md:grid-cols-[auto_1fr] gap-1 md:gap-4">
+            <div className="grid md:grid-cols-[auto_1fr] gap-0.5 md:gap-4 pb-2 md:pb-5">
 
-                <div className="">Legal Business Name:</div>
+                <div className="flex flex-col justify-center pb-0.5 md:pb-0">Legal Business Name</div>
                 <div className="form-right-col mb-3 md:mb-0">
                     <input
                         type="text"
                         defaultValue={business.name}
-                        className="w-full border-brand-primary border-2 rounded-lg"
+                        className="standard-field"
                         ref={nameField}
                         pattern="[a-zA-Z0-9 _.\-@\(\)+!?&#39;&quot;]+"
                         title="Only letters, numbers, spaces, underscores, periods, hyphens, @, parentheses, +, !, ?, single quotes, and double quotes are allowed."
@@ -90,12 +90,12 @@ export default function SignupBasic() {
                     />
                 </div>
 
-                <div className="">Business Phone Number:</div>
+                <div className="flex flex-col justify-center">Business Phone Number</div>
                 <div className="form-right-col mb-3 md:mb-0">
                     <input
                         type="text"
                         defaultValue={business.phone}
-                        className="w-full border-brand-primary border-2 rounded-lg"
+                        className="w-full border-gray-700 border rounded-sm pl-1.5 pt-0.5 pb-0.5"
                         ref={phoneField}
                         pattern="[a-zA-Z0-9 .\-\(\)+]+"
                         title="Only letters, numbers, spaces, periods, hyphens, parentheses, and + are allowed."
@@ -103,12 +103,12 @@ export default function SignupBasic() {
                     />
                 </div>
 
-                <div className="">Business Email:</div>
+                <div className="flex flex-col justify-center">Business Email</div>
                 <div className="form-right-col mb-3 md:mb-0">
                     <input
                         type="text"
                         defaultValue={business.email}
-                        className="w-full border-brand-primary border-2 rounded-lg"
+                        className="w-full border-gray-700 border rounded-sm pl-1.5 pt-0.5 pb-0.5"
                         ref={emailField}
                         pattern="[a-zA-Z0-9 _.\-@\(\)+!?&#39;&quot;]+"
                         title="Only letters, numbers, spaces, underscores, periods, hyphens, @, parentheses, +, !, ?, single quotes, and double quotes are allowed."
@@ -116,12 +116,12 @@ export default function SignupBasic() {
                     />
                 </div>
 
-                <div className="">Password:</div>
+                <div className="flex flex-col justify-center">Password</div>
                 <div className="form-right-col mb-3 md:mb-0">
                     <input
                         type="password"
                         defaultValue={business.password}
-                        className="w-full border-brand-primary border-2 rounded-lg"
+                        className="w-full border-gray-700 border rounded-sm pl-1.5 pt-0.5 pb-0.5"
                         pattern="[a-zA-Z0-9 _.\-@\(\)+!?&#39;&quot;]{10,}"
                         title="Only letters, numbers, spaces, underscores, periods, hyphens, @, parentheses, +, !, ?, single quotes, and double quotes are allowed. Also must be at least 10 chracters."
                         ref={passwordField}
@@ -129,19 +129,19 @@ export default function SignupBasic() {
                     />
                 </div>
 
-                <div className="">Verify Password:</div>
+                <div className="flex flex-col justify-center">Verify Password</div>
                 <div className="form-right-col">
                     <input
                         type="password"
                         defaultValue={business.password}
-                        className="w-full border-brand-primary border-2 rounded-lg"
+                        className="w-full border-gray-700 border rounded-sm pl-1.5 pt-0.5 pb-0.5"
                         ref={passwordFieldTwo}
                     />
                 </div>
 
-                <div>&nbsp;</div>
+                <div className="h-4"></div>
                 <div className="flex justify-end max-w-[400px]">
-                    <button role="button" className="standard-button" onClick={handleContinueClick}>Continue &gt;&gt;</button>
+                    <button role="button" className="standard-button" onClick={handleContinueClick}>Continue</button>
                 </div>
 
             </div>

@@ -21,7 +21,15 @@ body {
 }
 
 .standard-button {
-  @apply bg-brand-primary text-forground-light py-2 px-4 rounded-lg;
+  @apply bg-brand-primary text-forground-light py-2 px-7 rounded-sm tracking-wide border-2 border-white hover:bg-white hover:text-brand-primary hover:border-brand-primary;
+}
+
+.standard-field {
+  @apply w-full border-gray-700 border rounded-sm pl-1.5 pt-0.5 pb-0.5;
+}
+
+.standard-field-label {
+  @apply flex flex-col justify-center pb-0.5 md:pb-0;
 }
 
 .form-right-col {
