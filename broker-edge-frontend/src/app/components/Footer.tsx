@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Footer() {
     return (
-            <div className="bg-gradient-to-b from-[#0e5423] to-[#0e461f] pt-4 flex h-[167px] md:h-[114px] bg-left-top flex justify-center text-white text-m">
+            <div className="bg-gradient-to-b from-[#0e5423] to-[#0e461f] pt-4 flex h-[167px] md:h-[114px] bg-left-top flex justify-center text-white text-m fixed w-full bottom-0">
                 <div className="flex flex-col items-center space-y-4">
                     <div
                         className="flex flex-col md:flex-row md:w-full space-x-0 md:space-x-4 space-y-2 md:space-y-0 items-center">
