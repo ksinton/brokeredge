@@ -5,88 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2f177b5-e0c2-43a5-b797-beb457c7d4ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/broker-edge-api/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker-edge-api/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker-edge-api/src/db.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker-edge-api/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker-edge-api/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/counter/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/basic/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/categorization/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/broker-edge-frontend/src/lib/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/app-build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/app-build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/images/Vx5jUFVZ-PJdp2mDLnp7vvMQJl-9TyKLVnSORJdCLT8/60.1734378964809.3yR5PS5T3Qee6nO8LPV5RvH9PeBU7RNgmNdlNhae0rk.Vy8iZGJlMi0xOTM3YWNiYjIyYyI.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/images/rIYo_3f-_DsG2Gq0dDlBK9xIuMDNcEcExeXNNJ7YqkE/60.1733283295506.J2rM7R7WVUi2pt0WL2TLpuEOQ8dk0yMayzlwwZLlkZw.Vy8iZGJlMi0xOTM3YWNiYjIyYyI.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/0.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/index.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development-fallback/index.pack.gz.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/0.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/1.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/1.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/10.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/10.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/11.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/11.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/12.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/12.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/13.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/13.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/14.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/14.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/15.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/15.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/2.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/2.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/3.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/3.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/4.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/4.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/5.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/5.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/6.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/6.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/7.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/7.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/8.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/8.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/9.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/9.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/index.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/client-development/index.pack.gz.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/0.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/0.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/1.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/1.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/10.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/10.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/11.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/11.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/12.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/12.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/13.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/13.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/14.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/14.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/2.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/2.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/3.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/3.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/4.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/4.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/5.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/5.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/6.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/6.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/7.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/7.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/8.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/8.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/9.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/9.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/index.pack.gz" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/index.pack.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/index.pack.gz.old" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/cache/webpack/server-development/index.pack.gz.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app-paths-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app-paths-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app/page_client-reference-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/app/page_client-reference-manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/middleware-build-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/middleware-build-manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/next-font-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/next-font-manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/next-font-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/next-font-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/vendor-chunks/@swc.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/vendor-chunks/@swc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/vendor-chunks/next.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/vendor-chunks/next.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/server/webpack-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/server/webpack-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app-pages-internals.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app-pages-internals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/main-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/main-app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/css/app/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/css/app/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/media/3c0a36d4615ad53c-s.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/media/cedc0d4e6b719cc0-s.p.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/webpack/731afe6dcadb5526.webpack.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/webpack/app/layout.731afe6dcadb5526.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/static/webpack/webpack.731afe6dcadb5526.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/.next/trace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/intro/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/intro/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-frontend/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-api/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-api/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-api/src/services/authorization.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-api/src/services/authorization.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-api/src/services/persistBusiness.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-api/src/services/persistBusiness.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-api/src/services/persistUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-api/src/services/persistUser.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +84,8 @@
       <workItem from="1737322889565" duration="28179000" />
       <workItem from="1738378033741" duration="3057000" />
       <workItem from="1739394456989" duration="109138000" />
-      <workItem from="1740347611718" duration="43415000" />
+      <workItem from="1740347611718" duration="62637000" />
+      <workItem from="1741837061986" duration="41830000" />
     </task>
     <task id="LOCAL-00001" summary="Added white background to body&#10;Fixed position of sell your business button">
       <option name="closed" value="true" />
@@ -275,7 +199,39 @@
       <option name="project" value="LOCAL" />
       <updated>1741743496285</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add node modules to git ignore">
+      <option name="closed" value="true" />
+      <created>1741743641899</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741743641899</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add node modules to git ignore">
+      <option name="closed" value="true" />
+      <created>1741743648890</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741743648890</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add node modules to git ignore">
+      <option name="closed" value="true" />
+      <created>1741744060701</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741744060701</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added nginx&#10;using domains with local hosts file&#10;moved api to folder /api&#10;updated styles on signup flow">
+      <option name="closed" value="true" />
+      <created>1741967852904</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1741967852904</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +270,8 @@
     <MESSAGE value="Added SQL for creating database from pgAdmin" />
     <MESSAGE value="Adding missing whitelisting method" />
     <MESSAGE value="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token" />
+    <MESSAGE value="add node modules to git ignore" />
+    <MESSAGE value="added nginx&#10;using domains with local hosts file&#10;moved api to folder /api&#10;updated styles on signup flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="added nginx&#10;using domains with local hosts file&#10;moved api to folder /api&#10;updated styles on signup flow" />
   </component>
 </project>
