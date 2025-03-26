@@ -31,27 +31,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kimsinton/src/broker-edge/broker-edge-frontend/src/app/signup/basic&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/kimsinton/src/broker-edge/broker-edge-frontend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/kimsinton/src/broker-edge",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/kimsinton/src/broker-edge/broker-edge-frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app/signup/basic" />
@@ -85,7 +85,9 @@
       <workItem from="1738378033741" duration="3057000" />
       <workItem from="1739394456989" duration="109138000" />
       <workItem from="1740347611718" duration="62637000" />
-      <workItem from="1741837061986" duration="41830000" />
+      <workItem from="1741837061986" duration="62259000" />
+      <workItem from="1742788265503" duration="882000" />
+      <workItem from="1742926562492" duration="8516000" />
     </task>
     <task id="LOCAL-00001" summary="Added white background to body&#10;Fixed position of sell your business button">
       <option name="closed" value="true" />
@@ -231,7 +233,39 @@
       <option name="project" value="LOCAL" />
       <updated>1741967852904</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updated the database backup file&#10;moved footer to the bottom">
+      <option name="closed" value="true" />
+      <created>1742486748381</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1742486748381</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated the database backup file&#10;moved footer to the bottom">
+      <option name="closed" value="true" />
+      <created>1742486757373</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1742486757373</updated>
+    </task>
+    <task id="LOCAL-00021" summary="updated the database backup file">
+      <option name="closed" value="true" />
+      <created>1742487939304</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1742487939304</updated>
+    </task>
+    <task id="LOCAL-00022" summary="switched to MariaDB">
+      <option name="closed" value="true" />
+      <created>1742955625814</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1742955625814</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +295,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Added white background to body&#10;Fixed position of sell your business button" />
     <MESSAGE value="Fixed package JSON file" />
     <MESSAGE value="Adding unstaged files" />
@@ -272,6 +308,20 @@
     <MESSAGE value="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token" />
     <MESSAGE value="add node modules to git ignore" />
     <MESSAGE value="added nginx&#10;using domains with local hosts file&#10;moved api to folder /api&#10;updated styles on signup flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="added nginx&#10;using domains with local hosts file&#10;moved api to folder /api&#10;updated styles on signup flow" />
+    <MESSAGE value="updated the database backup file&#10;moved footer to the bottom" />
+    <MESSAGE value="updated the database backup file" />
+    <MESSAGE value="switched to MariaDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="switched to MariaDB" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/broker-edge-frontend/src/app/page.tsx</url>
+          <line>274</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
