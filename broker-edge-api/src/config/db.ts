@@ -1,14 +1,14 @@
 // @ts-ignore
-import { Pool } from "pg";
+import mysql from "mysql2";
 
-const pool = new Pool({
-    user: "kimsinton",
-    password: "",
+const pool = mysql.createPool({
+    user: "node",
+    password: "weallgetwealthy",
     host: "localhost",
-    port: 5432, // default Postgres port
+    port: 3306, // default Postgres port
     database: "brokeredge",
 });
 
 export const db = {
-    query: (text: string, params?: any[]) => pool.query(text, params),
+    query: (text: string, params?: any[]) => pool.promise().query(text, params), // Use promise-based query for async/await
 };

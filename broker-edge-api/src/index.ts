@@ -1,7 +1,6 @@
 import express from "express";
 import { createClient } from 'redis';
 import cookieParser from "cookie-parser";
-import cors from "cors";
 import bodyParser from "body-parser";
 
 // local project imports
