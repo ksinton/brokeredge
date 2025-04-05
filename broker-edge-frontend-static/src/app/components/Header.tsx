@@ -11,7 +11,7 @@ const shadowsIntoLight = Shadows_Into_Light({
 
 export default function Header() {
     return (
-        <div className="bg-header-background w-full relative">
+        <div className="bg-header-background w-full relative ">
 
             <Link href="/">
                 <Image
@@ -22,8 +22,6 @@ export default function Header() {
                     className="z-10 absolute w-[74px] h-[74px] md:w-[111px] md:h-[111px] lg:w-[148px] lg:h-[148px] top-[27px] md:top-[44px] left-[10px] md:left-[33px]"
                 />
             </Link>
-
-            <Bars3Icon className="h-8 w-8 absolute right-[7px] top-[3px] z-10 md:hidden"/>
 
             <div
                 className="flex space-between mx:0 md:mx-4 p-0 md:p-3 bg-[#326427] md:bg-top-menu-background h-[23px] md:h-[47px]">

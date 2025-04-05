@@ -239,7 +239,7 @@ export default function Home() {
 
   return (
       <>
-          <div className="bg-gradient-to-t from-mobile-header-dark-background to-mobile-header-background md:bg-[url('/buy-a-business-in-fairfield-iowa.jpg')] mx-0 md:mx-4 flex h-[27px] md:h-[58px] bg-left-bottom">
+          <div className="bg-gradient-to-t from-mobile-header-dark-background to-mobile-header-background md:bg-[url('/buy-a-business-in-fairfield-iowa.jpg')] mx-0 md:mx-4 flex h-[46px] md:h-[58px] bg-left-bottom">
 
               <div className="space-y-2 md:space-y-4 px-5 mt-3 relative w-full max-w-[430px] md:max-w-none">
                   <h1 className="block text-m md:text-[20px]">Buy a Local Business</h1>
@@ -250,7 +250,7 @@ export default function Home() {
 
                   <Link href="/sell-your-business">
                       <button role="button"
-                              className="bg-transparent border-[1px] border-white border-solid px-3 md:px-6 py-1 rounded-lg absolute top-0 md:top-[calc(50%-18px)] left-auto md:right-[30px] right-[21px] -translate-y-[22px] md:-translate-y-1/2 md:text-lg whitespace-nowrap">
+                              className="bg-transparent border-[1px] border-white border-solid px-3 md:px-6 py-1 rounded-lg absolute top-0 top-[calc(50%-9px)] md:top-[calc(50%-18px)] left-auto md:right-[30px] right-[21px] -translate-y-[22px] md:-translate-y-1/2 md:text-lg whitespace-nowrap">
                           Sell Your Business
                       </button>
                   </Link>
@@ -259,17 +259,6 @@ export default function Home() {
           </div>
 
           <Listings initialData={listingsData}/>
-
-          <div
-              className="bg-gradient-to-b from-[#2a6026] to-[#0e5423] flex h-[54px] md:h-[60px] bg-left-top flex justify-center bg-left-bottom text-m mb-[3px]">
-              <div className="flex space-x-3 items-center text-m leading-[0px]">
-                  <div className="text-top-menu-background bg-white py-4 px-2 rounded">1</div>
-                  <div>3</div>
-                  <div>4</div>
-                  <div>5</div>
-                  <div className="pl-8">Next &gt;&gt;</div>
-              </div>
-          </div>
       </>
 
   );
