@@ -10,7 +10,7 @@ export default function Home() {
         {
             title: "Sun Keto",
             description: "At Sun Keto, we are dedicated to providing high-quality, organic, keto-friendly products that help you stay on track with your low-carb, high-fat lifestyle. Our carefully curated selection of premium, nutrient-dense foods is designed to support your health goals while delivering great taste and convenience.",
-            price: 350000,
+            price: 17000,
             link:"sun-keto",
         },
     ];

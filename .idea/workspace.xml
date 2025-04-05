@@ -94,7 +94,7 @@
       <workItem from="1742926562492" duration="51334000" />
       <workItem from="1743624559292" duration="7109000" />
       <workItem from="1743741779425" duration="367000" />
-      <workItem from="1743797755967" duration="7702000" />
+      <workItem from="1743797755967" duration="8502000" />
     </task>
     <task id="LOCAL-00001" summary="Added white background to body&#10;Fixed position of sell your business button">
       <option name="closed" value="true" />
@@ -336,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743868125608</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="remove fake listings">
+      <option name="closed" value="true" />
+      <created>1743885157264</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1743885157264</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +394,8 @@
     <MESSAGE value="added broker edge static" />
     <MESSAGE value="updated port again in a diffrent spot for production" />
     <MESSAGE value="updated design" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated design" />
+    <MESSAGE value="remove fake listings" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove fake listings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
