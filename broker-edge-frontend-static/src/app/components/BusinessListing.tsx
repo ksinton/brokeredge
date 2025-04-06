@@ -14,7 +14,7 @@ export default function BusinessListing({BusinessData} : { BusinessData: Busines
                     <div className=""><span className="font-bold">Industry</span> {BusinessData.industry}</div>
                     <div className=""><span className="font-bold">Sub Industry</span> {BusinessData.subIndustry}</div>
                     <div className=""><span
-                        className="font-bold">Reason for selling</span> {BusinessData.sellerFinancing}</div>
+                        className="font-bold">Reason for selling</span> {BusinessData.reasonForSelling}</div>
                     <div className=""><span
                         className="font-bold">Assistance to buyer</span> {BusinessData.assistanceToBuyer}</div>
                 </div>
