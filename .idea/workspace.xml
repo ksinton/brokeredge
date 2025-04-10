@@ -96,7 +96,7 @@
       <workItem from="1743624559292" duration="7109000" />
       <workItem from="1743741779425" duration="367000" />
       <workItem from="1743797755967" duration="36129000" />
-      <workItem from="1744164157799" duration="50593000" />
+      <workItem from="1744164157799" duration="51431000" />
     </task>
     <task id="LOCAL-00001" summary="Added white background to body&#10;Fixed position of sell your business button">
       <option name="closed" value="true" />
@@ -378,7 +378,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744272255571</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="removed interview directory temporary">
+      <option name="closed" value="true" />
+      <created>1744292543329</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1744292543329</updated>
+    </task>
+    <task id="LOCAL-00037" summary="removed interview directory temporary">
+      <option name="closed" value="true" />
+      <created>1744292557724</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1744292557724</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +448,8 @@
     <MESSAGE value="updated price" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="in progress design&#10;added interview directory temporary" />
-    <option name="LAST_COMMIT_MESSAGE" value="in progress design&#10;added interview directory temporary" />
+    <MESSAGE value="removed interview directory temporary" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed interview directory temporary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
