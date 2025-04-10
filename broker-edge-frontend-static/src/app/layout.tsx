@@ -34,10 +34,12 @@ export default function RootLayout({
     >
     <ReactQueryProvider>
       <Header/>
-      {children}
-      <Footer/>
+      <div className="min-h-[calc(100vh-189px)] md:min-h-[calc(100vh-260px)]">
+        {children}
+      </div>
+        <Footer/>
     </ReactQueryProvider>
     </body>
     </html>
-);
+  );
 }

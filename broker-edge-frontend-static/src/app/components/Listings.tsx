@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from 'react';
 import ListingInterface from "../types/ListingInterface";
+import Utils from "../utils/Utils";
 
 export default function Listings({initialData} : { initialData: ListingInterface[]} ) {
 
@@ -19,7 +20,7 @@ export default function Listings({initialData} : { initialData: ListingInterface
                                 <div className="font-bold text-lg mb-2">{listing.title}</div>
                                 <div className="mb-6">{listing.description.substring(0, 330)}..</div>
                                 <div
-                                    className="absolute right-0 bottom-0 rounded-br-xl rounded-tl bg-[#ededed] py-1 px-3">${Math.round(listing.price / 1000)}k
+                                    className="absolute right-0 bottom-0 rounded-br-xl rounded-tl bg-[#ededed] py-1 px-3">${Utils.formatPrice(listing.price)}
                                 </div>
                                 </div>
                             </Link>
