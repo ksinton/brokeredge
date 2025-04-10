@@ -61,6 +61,7 @@
       <recent name="$PROJECT_DIR$/broker-edge-frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/broker-edge-frontend-static/public/businesses/sun-keto" />
       <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app" />
       <recent name="$PROJECT_DIR$/broker-edge-api/src/config" />
       <recent name="$PROJECT_DIR$/broker-edge-api/src" />
@@ -94,7 +95,8 @@
       <workItem from="1742926562492" duration="51334000" />
       <workItem from="1743624559292" duration="7109000" />
       <workItem from="1743741779425" duration="367000" />
-      <workItem from="1743797755967" duration="9997000" />
+      <workItem from="1743797755967" duration="36129000" />
+      <workItem from="1744164157799" duration="50593000" />
     </task>
     <task id="LOCAL-00001" summary="Added white background to body&#10;Fixed position of sell your business button">
       <option name="closed" value="true" />
@@ -352,7 +354,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743886022166</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1743903462086</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1743903462086</updated>
+    </task>
+    <task id="LOCAL-00034" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1743903467448</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1743903467448</updated>
+    </task>
+    <task id="LOCAL-00035" summary="in progress design&#10;added interview directory temporary">
+      <option name="closed" value="true" />
+      <created>1744272255571</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1744272255571</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +430,9 @@
     <MESSAGE value="updated design" />
     <MESSAGE value="remove fake listings" />
     <MESSAGE value="updated price" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated price" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="in progress design&#10;added interview directory temporary" />
+    <option name="LAST_COMMIT_MESSAGE" value="in progress design&#10;added interview directory temporary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
