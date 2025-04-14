@@ -4,14 +4,14 @@ import BusinessListing from "../../components/BusinessListing";
 import businessInterface from "../../types/BusinessInterface";
 
 const businessData : businessInterface = {
-    name: "Sun keto",
-    price: "$15,000",
+    name: "Sun Keto",
+    price: "$17,000",
     industry: "Online Business",
     subIndustry: "Online Retail",
     sellerFinancing: "Yes (up to 30%)",
     reasonForSelling: "Career Change",
-    email:"andrew@sun-keto.com",
-    phone: "641 919 5609",
+    email:"jordi@brokeredgeinc.com",
+    phone: "641-451-1655",
     website: "https://www.amazon.com/s?i=merchant-items&me=A15O3W07UBP22A",
     startDate: "05/20/2020",
     assistanceToBuyer: "A small amount",
@@ -23,14 +23,14 @@ const businessData : businessInterface = {
         "Organic Pili Nuts – Sustainably sourced, wild sprouted, and packed with healthy fats. These low-carb, sugar-free, and gluten-free nuts are a perfect snack for keto, paleo, and vegan lifestyles.\n" +
         "\n" +
         "Why Choose Sun Keto?\n" +
-        "✅ 100% Keto-Friendly & Low Carb\n" +
-        "✅ Organic & Premium Ingredients\n" +
-        "✅ No Added Sugars, Preservatives, or Fillers\n" +
-        "✅ Convenient & Delicious\n" +
+        " 100% Keto-Friendly & Low Carb\n" +
+        " Organic & Premium Ingredients\n" +
+        " No Added Sugars, Preservatives, or Fillers\n" +
+        " Convenient & Delicious\n" +
         "\n" +
         "Sold exclusively on Amazon, we make it easy to stock up on the best keto-approved products with fast and reliable shipping. Whether you’re blending up a creamy butter coffee or snacking on nutrient-dense Pili nuts, Sun Keto is here to fuel your journey to better health.\n" +
         "\n" +
-        "🌞 Sun Keto – Pure, Healthy, and Keto-Approved.",
+        " Sun Keto – Pure, Healthy, and Keto-Approved.",
 }
 
 export default function Home() {
