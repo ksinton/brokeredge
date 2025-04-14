@@ -4,6 +4,7 @@ import BusinessInterface from "../types/BusinessInterface";
 import React, {useState, useRef} from "react";
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/zoom';
