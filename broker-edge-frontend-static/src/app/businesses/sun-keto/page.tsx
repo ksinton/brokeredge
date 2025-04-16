@@ -15,6 +15,11 @@ const businessData : businessInterface = {
     website: "https://www.amazon.com/s?i=merchant-items&me=A15O3W07UBP22A",
     startDate: "05/20/2020",
     assistanceToBuyer: "A small amount",
+    numberOfImages: 2,
+    images: [
+        "/businesses/sun-keto/sunKetoGrassFedButter.jpg",
+        "/businesses/sun-keto/sunketopilinuts.jpg",
+    ],
     description: "At Sun Keto, we are dedicated to providing high-quality, organic, keto-friendly products that help you stay on track with your low-carb, high-fat lifestyle. Our carefully curated selection of premium, nutrient-dense foods is designed to support your health goals while delivering great taste and convenience.\n" +
         "\n" +
         "Our Products\n" +

@@ -10,5 +10,7 @@ export default interface businessInterface {
     website?: string;
     assistanceToBuyer: string;
     startDate: string;
+    numberOfImages: number,
+    images: Array<string>,
     description: string;
 }
