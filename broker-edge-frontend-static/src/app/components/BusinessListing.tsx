@@ -94,7 +94,7 @@ export default function BusinessListing({BusinessData} : { BusinessData: Busines
                     zoom={true}
                     spaceBetween={10}
                     slidesPerView={1}
-                    className="w-[291px] h-[440px] md:h-[481px] md:w-[320px]"
+                    className="w-[291px] h-[440px] md:h-[481px] md:w-[320px] lg:h-[553px] lg:w-[368px] xl:h-[601.25px] xl:w-[400px]"
                 >
                     {BusinessData.images.map((image, index) => {
 

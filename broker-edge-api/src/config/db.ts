@@ -2,8 +2,8 @@
 import mysql from "mysql2";
 
 const pool = mysql.createPool({
-    user: "node",
-    password: "weallgetwealthy",
+    user: "root",
+    password: "weallmakemoney!",
     host: "localhost",
     port: 3306, // default Postgres port
     database: "brokeredge",
