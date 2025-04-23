@@ -54,6 +54,7 @@ services:
       dockerfile: Dockerfile
     volumes:
         - ./broker-edge-api:/src
+        - /src/node_modules
     ports:
       - "8000:8000"
     networks:
