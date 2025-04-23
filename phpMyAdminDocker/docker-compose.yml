@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mariadb:
     platform: ${PLATFORM}
-    image: mariadb:11.3
+    image: yobasystems/alpine-mariadb:10.11.6
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -17,7 +17,7 @@ services:
 
   phpmyadmin:
     platform: linux/amd64
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin:5.2.1
     restart: always
     ports:
       - "8081:80"

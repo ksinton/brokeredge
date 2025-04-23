@@ -11,7 +11,9 @@ import { newAuthorizationToken, authorize} from "./services/authorization";
 import { db } from "./config/db";
 
 // create the redis client
-const client = createClient();
+const client = createClient({
+        url: 'redis://redis:6379'
+});
 
 const app = express();
 

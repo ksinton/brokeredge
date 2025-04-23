@@ -1,0 +1,103 @@
+version: '3.8'
+
+services:
+  redis:
+    platform: ${PLATFORM}
+    image: redis:7-alpine
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+    volumes:
+      - redis_data:/data
+
+  mariadb:
+    platform: ${PLATFORM}
+    image: mariadb:10.11
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${MYSQL_DATABASE}
+      MARIADB_USER: ${MYSQL_USER}
+      MARIADB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    networks:
+      - app-network
+
+  phpmyadmin:
+    platform: ${PLATFORM}
+    image: phpmyadmin:latest
+
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: ${PMA_HOST}
+      PMA_PORT: ${PMA_PORT}
+    depends_on:
+      - mariadb
+    networks:
+      - app-network
+
+  api:
+    platform: ${PLATFORM}
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_USER: ${MYSQL_USER}
+      DB_PASS: ${MYSQL_PASSWORD}
+      DB_NAME: ${MYSQL_DATABASE}
+    build:
+      context: ./broker-edge-api
+      dockerfile: Dockerfile
+    volumes:
+        - ./broker-edge-api:/src
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+
+  frontend:
+    platform: ${PLATFORM}
+    build:
+      context: ./broker-edge-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+  frontend2:
+    platform: ${PLATFORM}
+    build:
+      context: ./broker-edge-frontend-static
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    networks:
+      - app-network
+
+  nginx:
+    platform: ${PLATFORM}
+    image: nginx:stable-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/brokeredge.conf:/etc/nginx/conf.d/brokeredge.conf
+    depends_on:
+      - api
+      - frontend
+      - frontend2
+      - phpmyadmin
+    networks:
+      - app-network
+
+volumes:
+  mariadb_data:
+  redis_data:
+
+networks:
+  app-network:
+    driver: bridge
