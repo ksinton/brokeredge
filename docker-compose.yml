@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   redis:
     platform: ${PLATFORM}
@@ -32,8 +30,6 @@ services:
     image: phpmyadmin:latest
 
     restart: always
-    ports:
-      - "8081:80"
     environment:
       PMA_HOST: ${PMA_HOST}
       PMA_PORT: ${PMA_PORT}
@@ -82,7 +78,7 @@ services:
 
   nginx:
     platform: ${PLATFORM}
-    image: nginx:stable-alpine
+    image: nginx:stable
     ports:
       - "80:80"
     volumes:

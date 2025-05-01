@@ -99,7 +99,7 @@ export default function BusinessListing({BusinessData} : { BusinessData: Busines
                     {BusinessData.images.map((image, index) => {
 
                         return(
-                            <SwiperSlide>
+                            <SwiperSlide key={index}>
                                 <div className="swiper-zoom-container">
                                     <Image src={image} alt="1" width="640" height="967"
                                            className="cursor-pointer"
