@@ -73,6 +73,12 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3001:3001"
+    working_dir: /app
+    volumes:
+      - ./broker-edge-frontend-static:/app           # maps the whole frontend directory
+      - /app/node_modules                             # ensures node_modules persists inside container
+    environment:
+      - WATCHPACK_POLLING=true                        # helps hot reload in Docker
     networks:
       - app-network
 

@@ -15,7 +15,7 @@ export default function Header() {
 
             <Link href="/">
                 <Image
-                    src="/logo.png"
+                    src="/sites/fairfield/logo.png"
                     width={148}
                     height={148}
                     alt="sjfhjksfhs"

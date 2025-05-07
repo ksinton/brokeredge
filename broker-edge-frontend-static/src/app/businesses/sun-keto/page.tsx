@@ -1,7 +1,7 @@
 import React from 'react';
-import  Link from 'next/link';
 import BusinessListing from "../../components/BusinessListing";
 import businessInterface from "../../types/BusinessInterface";
+import { headers } from 'next/headers';
 
 const businessData : businessInterface = {
     name: "Sun Keto",
@@ -40,9 +40,11 @@ const businessData : businessInterface = {
 
 export default function Home() {
 
+    const host = headers().get('x-custom-host') || '';
+
   return (
       <>
-        <BusinessListing BusinessData={businessData}/>
+        <BusinessListing BusinessData={businessData} host={host}/>
       </>
 
   );

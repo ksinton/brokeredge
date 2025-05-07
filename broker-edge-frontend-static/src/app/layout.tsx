@@ -45,18 +45,19 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en">
-    <body
-        className="text-forground-light bg-white"
-    >
-    <ReactQueryProvider>
-      <Header/>
-      <div className="min-h-[calc(100vh-189px)] md:min-h-[calc(100vh-260px)]">
-        {children}kljiljlk
-      </div>
-        <Footer/>
-    </ReactQueryProvider>
-    </body>
-    </html>
+      <html lang="en">
+
+      <body
+          className="text-forground-light bg-white"
+      >
+      <ReactQueryProvider>
+          <Header/>
+          <div className="min-h-[calc(100vh-189px)] md:min-h-[calc(100vh-260px)]">
+              {children}
+          </div>
+          <Footer/>
+      </ReactQueryProvider>
+      </body>
+      </html>
   );
 }

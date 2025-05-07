@@ -10,8 +10,9 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import 'swiper/css';
 import 'swiper/css/zoom';
+import SiteSpecificStyles from "../utils/SiteSpecificStyles";
 
-export default function BusinessListing({BusinessData} : { BusinessData: BusinessInterface} ) {
+export default function BusinessListing({BusinessData, host} : { BusinessData: BusinessInterface, host: string } ) {
 
     const swiperRef = useRef<SwiperType>();
     const [activeIndex, setActiveIndex] = useState(0);
@@ -24,7 +25,7 @@ export default function BusinessListing({BusinessData} : { BusinessData: Busines
     <>
 
     <div className="text-gray-700 md:mx-4 p-4">
-        <h1 className="text-3xl text-brand-primary">{BusinessData.name}</h1>
+        <h1 className={SiteSpecificStyles.listingHeading(host)}>{BusinessData.name}</h1>
         <div className="text-lg pt-2">Industry {BusinessData.industry} / {BusinessData.subIndustry}</div>
     </div>
 
@@ -120,7 +121,7 @@ export default function BusinessListing({BusinessData} : { BusinessData: Busines
                         className="absolute top-0 z-10 left-[calc(50%-24px)] cursor-pointer"/>
                 )}
 
-                {activeIndex < totalSlides - 1 && (
+                {(totalSlides > 0 && activeIndex < totalSlides - 1) && (
                     <Image src="/icons/arrow.png" alt="next image arrow" width="35" height="19" onClick={() => swiperRef.current?.slideNext()}
                            className="absolute bottom-0  rotate-180 z-10 left-[calc(50%-8px)] cursor-pointer"/>
                 )}
