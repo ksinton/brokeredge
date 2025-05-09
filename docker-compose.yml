@@ -71,14 +71,19 @@ services:
     build:
       context: ./broker-edge-frontend-static
       dockerfile: Dockerfile
+      args:
+        APP_ENV: ${APP_ENV}
     ports:
       - "3001:3001"
     working_dir: /app
+    command: npm run ${APP_COMMAND}
     volumes:
-      - ./broker-edge-frontend-static:/app           # maps the whole frontend directory
-      - /app/node_modules                             # ensures node_modules persists inside container
+      - type: bind
+        source: ./broker-edge-frontend-static
+        target: /app
     environment:
-      - WATCHPACK_POLLING=true                        # helps hot reload in Docker
+      - WATCHPACK_POLLING=true
+      - NODE_ENV=${APP_ENV}
     networks:
       - app-network
 
