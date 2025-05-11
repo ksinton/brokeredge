@@ -1,0 +1,53 @@
+worker_processes 1;
+
+events {
+    worker_connections 1024;
+}
+
+http {
+    include mime.types;
+    default_type application/octet-stream;
+
+    sendfile on;
+    keepalive_timeout 65;
+
+    server {
+        listen 80;
+        server_name brokeredge.com www.brokeredge.com;
+
+
+        location / {
+            proxy_pass http://3.23.53.26:3001/;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+
+        location /api/ {
+            proxy_pass http://3.23.53.26:8000/;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+
+        location /phpmyadmin/ {
+            proxy_pass http://3.23.53.26:8080/;  # phpMyAdmin container mapped to 8080?
+            proxy_set_header Host $host;
+        }
+    }
+
+    server {
+        listen 80;
+        server_name fairfieldbusinesslistings.com www.fairfieldbusinesslistings.com iowacitybusinessesforsale.com www.iowacitybusinessesforsale.com;
+
+        location / {
+            proxy_pass http://3.23.53.26:3000/;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }
+}
