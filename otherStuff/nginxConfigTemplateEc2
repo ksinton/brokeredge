@@ -13,16 +13,6 @@ http {
 
     server {
         listen 80;
-        server_name;
-
-        location /phpmyadmin/ {
-            proxy_pass http://127.0.0.1:8080/;  # phpMyAdmin container mapped to 8080?
-            proxy_set_header Host $host;
-        }
-    }
-
-    server {
-        listen 80;
         server_name fairfieldbusinesslistings.com www.fairfieldbusinesslistings.com iowacitybusinessesforsale.com www.iowacitybusinessesforsale.com;
 
         location / {
