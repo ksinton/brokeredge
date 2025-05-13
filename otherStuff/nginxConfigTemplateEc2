@@ -13,13 +13,18 @@ http {
 
     server {
         listen 80;
-        server_name fairfieldbusinesslistings.com www.fairfieldbusinesslistings.com iowacitybusinessesforsale.com www.iowacitybusinessesforsale.com;
+        server_name brokeredginc.com www.brokeredginc.com;
 
         location / {
             root /home/ec2-user/src/brokeredgesplash;
             index index.html;
             try_files $uri $uri/ =404;
         }
+    }
+
+    server {
+        listen 80;
+        server_name fairfieldbusinesslistings.com www.fairfieldbusinesslistings.com iowacitybusinessesforsale.com www.iowacitybusinessesforsale.com;
 
         location / {
             proxy_pass http://127.0.0.1:3001/;
