@@ -54,11 +54,11 @@ http {
         listen 80;
         server_name brokeredginc.com www.brokeredginc.com;
 
-        root /home/ec2-user/src/brokeredgesplash;
-        index index.html;
-
         location / {
+            root /home/ec2-user/src/brokeredgesplash;
+            index index.html;
             try_files $uri $uri/ =404;
         }
     }
+
 }
