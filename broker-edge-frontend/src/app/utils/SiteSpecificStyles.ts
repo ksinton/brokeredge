@@ -80,7 +80,7 @@ class SiteSpecificStyles {
 
         switch (true) {
             case host?.includes("iowacitybusinessesforsale.com"):
-                outputClasses = "[&]:bg-[#200571]";
+                outputClasses = "[&]:bg-[#200571] hover:[&]:border-[#200571] hover:[&]:text-[#200571]";
                 break;
             default:
                 outputClasses = "bg-brand-primary";
