@@ -73,6 +73,21 @@ class SiteSpecificStyles {
 
         return outputClasses;
     }
+
+    static standardBgColor(host: String): string {
+
+        let outputClasses = "";
+
+        switch (true) {
+            case host?.includes("iowacitybusinessesforsale.com"):
+                outputClasses = "[&]:bg-[#200571]";
+                break;
+            default:
+                outputClasses = "bg-brand-primary";
+        }
+
+        return outputClasses;
+    }
 }
 
 export default SiteSpecificStyles;

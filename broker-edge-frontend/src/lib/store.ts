@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import {addBusiness} from "./rest/addBusiness";
+import { headers } from 'next/headers'
 
 export type Business = {
     name: string;
@@ -13,17 +14,20 @@ export type State = {
 };
 
 export type Actions = {
-  updateBusiness: (business: Business) => Promise<object>;
+  updateBusiness: (host: String, business: Business) => Promise<object>;
 };
 
 export const useBusinessStore = create<State & Actions>()((set) => ({
+
     business: {
         name: "",
         phone: "",
         email: "",
         password: "",
     },
-    updateBusiness: async (business: Business) : Promise<object> => {
+
+
+    updateBusiness: async (host: String,  business: Business) : Promise<object> => {
 
         console.log("business", business);
 
@@ -31,7 +35,7 @@ export const useBusinessStore = create<State & Actions>()((set) => ({
             business: business
         }));
 
-        const response: object = await addBusiness(business);
+        const response: object = await addBusiness(host, business);
 
         return response;
     }

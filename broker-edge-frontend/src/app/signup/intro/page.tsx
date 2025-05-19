@@ -1,8 +1,13 @@
 import Image from "next/image";
 import React from 'react';
 import Link from "next/link";
+import { headers } from 'next/headers';
+import SiteSpecificStyles from "../../utils/SiteSpecificStyles";
 
 export default function Home() {
+
+ const host = headers().get('x-custom-host') || '';
+
   return (
       <div className="flex text-standard-text-color p-5">
         <div className="flex flex-col items-end mr-6 w-1/2">
@@ -12,7 +17,11 @@ export default function Home() {
             </div>
 
             <Link href="/signup/basic">
-                <button role="button" className="standard-button">Get Started</button>
+                <button role="button"
+                        className={`standard-button ${SiteSpecificStyles.standardBgColor(host)}`}
+                >
+                    Get Started
+                </button>
             </Link>
         </div>
         <div className="w-1/2 bg-gray-300"></div>

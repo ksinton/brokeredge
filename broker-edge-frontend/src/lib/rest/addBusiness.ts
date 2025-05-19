@@ -1,6 +1,6 @@
 import {Business} from "../store";
 
-async function postBusiness(business:Business) {
+async function postBusiness(host :String, business:Business) {
     const options = {
         method: "POST",
         body: JSON.stringify({
@@ -17,7 +17,7 @@ async function postBusiness(business:Business) {
 
     try {
         // @ts-ignore
-        let response = await fetch("http://brokeredge.com/api/business", options,);
+        let response = await fetch(`/api/business`, options,);
         return await response.json();
     } catch(err: any) {
         console.error("Fetch Error", err);
@@ -25,7 +25,7 @@ async function postBusiness(business:Business) {
     }
 }
 
-export async function addBusiness(business: Business): Promise<object> {
+export async function addBusiness(host :String, business: Business): Promise<object> {
     console.log("over here before save inside addbusiness");
-    return await postBusiness(business);
+    return await postBusiness(host, business);
 }

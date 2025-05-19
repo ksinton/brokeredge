@@ -1,11 +1,16 @@
-# frontend/Dockerfile
 FROM node:20-alpine
+
 WORKDIR /app
 
-COPY ./ ./
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+COPY package*.json ./
 RUN npm install
-RUN npm run build
 
-EXPOSE 3000
+# App code will be mounted into /app/app during development
+COPY . .
 
-CMD ["npm", "start"]
+ENTRYPOINT ["/app/entrypoint.sh"]
+
+

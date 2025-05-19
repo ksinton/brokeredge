@@ -5,8 +5,11 @@ import { useRouter } from 'next/navigation';
 import React,{ useRef } from 'react';
 import Link from "next/link";
 import {Business, useBusinessStore} from "../../../lib/store";
+import SiteSpecificStyles from "../../utils/SiteSpecificStyles";
 
 export default function SignupBasic() {
+
+    const host = window.location.hostname;
 
     const router = useRouter();
 
@@ -54,7 +57,7 @@ export default function SignupBasic() {
             password: passwordField.current.value,
         };
 
-        updateBusiness(updatedBusiness).then((response) => {
+        updateBusiness(host, updatedBusiness).then((response) => {
             // @ts-ignore
             if (response && response.success === true) {
                 router.push('/signup/categorization');
@@ -65,15 +68,12 @@ export default function SignupBasic() {
 
         });
 
-
-
-
     };
 
     return (
         <div className="flex flex-col text-standard-text-color p-5">
 
-            <h1 className="text-2xl mb-4 md:mb-6 text-brand-primary">List Your Business - Basic Info </h1>
+            <h1 className={SiteSpecificStyles.standardHeading(host)}>List Your Business - Basic Info</h1>
 
             <div className="grid md:grid-cols-[auto_1fr] gap-0.5 md:gap-4 pb-2 md:pb-5">
 
@@ -141,7 +141,7 @@ export default function SignupBasic() {
 
                 <div className="h-4"></div>
                 <div className="flex justify-end max-w-[400px]">
-                    <button role="button" className="standard-button" onClick={handleContinueClick}>Continue</button>
+                    <button role="button" className={`standard-button ${SiteSpecificStyles.standardBgColor(host)}`} onClick={handleContinueClick}>Continue</button>
                 </div>
 
             </div>

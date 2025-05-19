@@ -39,6 +39,7 @@ services:
       - app-network
 
   api:
+    container_name: api
     platform: ${PLATFORM}
     environment:
       DB_HOST: ${DB_HOST}
@@ -61,25 +62,15 @@ services:
     build:
       context: ./broker-edge-frontend
       dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    networks:
-      - app-network
-
-  frontend2:
-    platform: ${PLATFORM}
-    build:
-      context: ./broker-edge-frontend-static
-      dockerfile: Dockerfile
       args:
         APP_ENV: ${APP_ENV}
     ports:
-      - "3001:3001"
+      - "3000:3000"
     working_dir: /app
     command: npm run ${APP_COMMAND}
     volumes:
       - type: bind
-        source: ./broker-edge-frontend-static
+        source: ./broker-edge-frontend
         target: /app
     environment:
       - WATCHPACK_POLLING=true
@@ -97,7 +88,6 @@ services:
     depends_on:
       - api
       - frontend
-      - frontend2
       - phpmyadmin
     networks:
       - app-network
