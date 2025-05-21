@@ -1,21 +1,21 @@
-// @ts-ignore
-import mysql from "mysql2";
+import mysql, { PoolOptions } from "mysql2/promise";
 
-const pool = mysql.createPool({
+const poolOptions: PoolOptions = {
     user: "root",
     password: "weallmakemoney!",
     host: "mariadb",
     port: 3306,
     database: "brokeredge",
-    ssl: false, // <-- try explicitly false here
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
-});
+};
+
+const pool = mysql.createPool(poolOptions);
 
 (async () => {
     try {
-        const conn = await pool.promise().getConnection();
+        const conn = await pool.getConnection();
         console.log("✅ Database connection established");
         conn.release();
     } catch (err) {
@@ -24,5 +24,5 @@ const pool = mysql.createPool({
 })();
 
 export const db = {
-    query: (text: string, params?: any[]) => pool.promise().query(text, params),
+    query: (text: string, params?: any[]) => pool.query(text, params),
 };
