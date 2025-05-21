@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
+    "target": "es2017",         // Upgrade target so async/await works well
+    "module": "commonjs",       // Keep commonjs for Node.js compatibility
     "noImplicitAny": true,
     "removeComments": true,
     "esModuleInterop": true,

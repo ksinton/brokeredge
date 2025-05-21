@@ -7,6 +7,7 @@ import bodyParser from "body-parser";
 import {whitelistFields, truncateString} from "./utils/whiteListing";
 import { addBusiness, updateBusiness} from "./services/persistBusiness";
 import { addUser, updateUser} from "./services/persistUser";
+import { getIndustries, getSubIndustries, getReasonsForSelling, getSellerFinancing, getSuccessorOnboarding } from "./services/persistLists";
 import { newAuthorizationToken, authorize} from "./services/authorization";
 import { db } from "./config/db";
 
@@ -15,6 +16,43 @@ const client = createClient({
         url: 'redis://redis:6379'
 });
 
+interface industryDataInterface {
+        id: number;
+        name: string;
+}
+
+interface subIndustryDataInterface {
+        id: number;
+        industryId: number;
+        name: string;
+}
+
+interface reasonsForSellingDataInterface {
+        id: number;
+        name: string;
+}
+
+interface sellerFinancingDataInterface {
+        id: number;
+        name: string;
+}
+
+interface successorOnboardingDataInterface {
+        id: number;
+        name: string;
+}
+
+interface industry {
+        name: string;
+        subIndustries: string[];
+}
+
+interface industriesInterface { [key: number]: industry }
+interface subIndustriesInterface { [key: number]: string }
+interface reasonsForSellingInterface { [key: number]: string }
+interface sellerFinancingInterface { [key: number]: string }
+interface successorOnboardingInterface { [key: number]: string }
+
 const app = express();
 
 app.use(cookieParser()); // Add this middleware
@@ -22,7 +60,79 @@ app.use(cookieParser()); // Add this middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 
+
 const PORT = process.env.PORT || 8000;
+
+let industryData: industryDataInterface[] | null = [];
+let subIndustryData: subIndustryDataInterface[] | null = [];
+let reasonsForSellingData: subIndustryDataInterface[] | null = [];
+let sellerFinancingData: sellerFinancingDataInterface[] | null = [];
+let successorOnboardingData: successorOnboardingDataInterface[] | null = [];
+
+let industries : industriesInterface = {};
+let subIndustries : subIndustriesInterface = {};
+let reasonsForSelling : reasonsForSellingInterface = {};
+let sellerFinancing : sellerFinancingInterface = {};
+let successorOnboarding : successorOnboardingInterface = {};
+
+
+(async () => {
+        industryData = await getIndustries(db);
+
+        if (industryData) {
+
+                industryData.forEach((industryObj: industryDataInterface) => {
+                        industries[industryObj.id] = { name: industryObj.name, subIndustries: []}
+                })
+        }
+
+        subIndustryData = await getSubIndustries(db);
+
+        if(subIndustryData) {
+                subIndustryData.forEach((subIndustryObj: subIndustryDataInterface) => {
+                        subIndustries[subIndustryObj.id] = subIndustryObj.name;
+                        industries[subIndustryObj.industryId].subIndustries.push(subIndustryObj.name);
+
+                })
+        }
+
+        reasonsForSellingData = await getReasonsForSelling(db);
+
+        if(reasonsForSellingData) {
+                reasonsForSellingData.forEach((reasonsForSellingObj: reasonsForSellingDataInterface) => {
+                        reasonsForSelling[reasonsForSellingObj.id] = reasonsForSellingObj.name;
+                })
+        }
+
+        sellerFinancingData = await getSellerFinancing(db);
+
+        if(sellerFinancingData) {
+                sellerFinancingData.forEach((sellerFinancingObj: sellerFinancingDataInterface) => {
+                        sellerFinancing[sellerFinancingObj.id] = sellerFinancingObj.name;
+                })
+        }
+
+        successorOnboardingData = await getSuccessorOnboarding(db);
+
+        if(successorOnboardingData) {
+                successorOnboardingData.forEach((successorOnboardingObj: successorOnboardingDataInterface) => {
+                        successorOnboarding[successorOnboardingObj.id] = successorOnboardingObj.name;
+                })
+        }
+
+        console.log("industries", industries);
+        console.log("sub industries", subIndustries);
+        console.log("reasonsForSelling", reasonsForSelling);
+        console.log("sellerFinancing", sellerFinancing);
+        console.log("successorOnboarding", successorOnboarding);
+
+        app.listen(PORT, async () => {
+                await client.connect();
+                console.log('Redis Connected');
+                console.log(`Server started on port ${PORT}`);
+        });
+})();
+
 
 app.get("/", (req: express.Request, res: express.Response) => {
         res.status(200).send("Welcome");
@@ -108,10 +218,3 @@ app.post("/business", async (req: express.Request, res: express.Response) => {
         }
     }
 )
-
-app.listen(PORT, async() => {
-        // connect to redis
-        await client.connect(); // Explicitly connect Redis before using it
-        console.log('Redis Connected');
-        console.log(`Server started on port ${PORT}`);
-})

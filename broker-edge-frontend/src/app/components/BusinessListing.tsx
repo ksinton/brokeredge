@@ -102,7 +102,7 @@ export default function BusinessListing({BusinessData, host} : { BusinessData: B
                         return(
                             <SwiperSlide key={index}>
                                 <div className="swiper-zoom-container">
-                                    <Image src={image} alt="1" width="640" height="967"
+                                    <Image src={image} alt="1" width="638" height="879"
                                            className="cursor-pointer"
                                            onClick={() => {
                                                 setOpenIndex(index);
