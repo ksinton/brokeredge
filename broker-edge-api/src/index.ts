@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 
 // local project imports
 import {whitelistFields, truncateString} from "./utils/whiteListing";
-import { addBusiness, updateBusiness} from "./services/persistBusiness";
+import { addBusiness, updateBusiness, getBusinessListings} from "./services/persistBusiness";
 import { addUser, updateUser} from "./services/persistUser";
 import { getIndustries, getSubIndustries, getReasonsForSelling, getSellerFinancing, getSuccessorOnboarding } from "./services/persistLists";
 import { newAuthorizationToken, authorize} from "./services/authorization";
@@ -138,6 +138,17 @@ app.get("/", (req: express.Request, res: express.Response) => {
         res.status(200).send("Welcome");
     }
 )
+
+app.get("/businesses", async (req: express.Request, res: express.Response) => {
+
+        const businessListings = await getBusinessListings(db, 2);
+
+        if (industryData) {
+                res.json({success: true, data: businessListings});
+        } else {
+                res.json({success: false});
+        }
+})
 
 app.post("/business", async (req: express.Request, res: express.Response) => {
 

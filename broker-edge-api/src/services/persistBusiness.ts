@@ -21,6 +21,20 @@ export const addBusiness = async (db: any, businessData: any, userId: number | n
     }
 };
 
+export const getBusinessListings  = async (db: any, siteId: number): Promise< any[] | null > => {
+
+    try {
+        const query = `SELECT business.id, business.name, SUBSTRING(business.sellers_description, 1, 330) AS sellers_description FROM business INNER JOIN sites_businesses ON business.id = sites_businesses.business_id WHERE sites_businesses.site_id = ${siteId}`;
+        const [result] = await db.query(query);
+
+        return result;
+    } catch (err) {
+        console.error(err);
+        throw err;
+    }
+}
+
+
 export const updateBusiness = async (db: any, data: any, userId: number | null): Promise< number | null > => {
 
     try {
