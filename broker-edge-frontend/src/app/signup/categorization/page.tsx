@@ -63,7 +63,7 @@ export default function SignupCategorization() {
             password: passwordField.current.value,
         };
 
-        updateBusiness(updatedBusiness);
+        updateBusiness(host, updatedBusiness);
     };
 
     return (

@@ -29,3 +29,8 @@ export async function addBusiness(host :String, business: Business): Promise<obj
     console.log("over here before save inside addbusiness");
     return await postBusiness(host, business);
 }
+
+// export async function getBusinesses(host :String): Promise<object> {
+//     console.log("over here before save inside getBusinesses");
+//     //return await postBusiness(host);
+// }

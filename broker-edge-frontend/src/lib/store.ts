@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import {addBusiness} from "./rest/addBusiness";
+import {addBusiness} from "./rest/business";
 import { headers } from 'next/headers'
 
 export type Business = {
