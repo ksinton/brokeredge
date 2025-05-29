@@ -1,3 +1,5 @@
+import {listsInterface, industry, sellerFinancingDataInterface} from "../types/listsInterface";
+
 export const addBusiness = async (db: any, businessData: any, userId: number | null): Promise< number | null > => {
 
     let newBusinessId :number|null = null;
@@ -24,10 +26,38 @@ export const addBusiness = async (db: any, businessData: any, userId: number | n
 export const getBusinessListings  = async (db: any, siteId: number): Promise< any[] | null > => {
 
     try {
-        const query = `SELECT business.id, business.name, SUBSTRING(business.sellers_description, 1, 330) AS sellers_description FROM business INNER JOIN sites_businesses ON business.id = sites_businesses.business_id WHERE sites_businesses.site_id = ${siteId}`;
+        const query = `SELECT business.route, business.desired_price, business.name, SUBSTRING(business.sellers_description, 1, 330) AS sellers_description FROM business INNER JOIN sites_businesses ON business.id = sites_businesses.business_id WHERE sites_businesses.site_id = ${siteId}`;
         const [result] = await db.query(query);
 
         return result;
+    } catch (err) {
+        console.error(err);
+        throw err;
+    }
+}
+
+export const getBusiness  = async (db: any, route: string, lists: listsInterface): Promise< any[] | null > => {
+
+    try {
+        const query = `SELECT * FROM business WHERE route = "${route}"`;
+        const [result] = await db.query(query);
+
+        const businessData = await result[0];
+
+        console.log("businessData ****** 68676767867",businessData);
+        const industryName : string = lists.industries[businessData.industry_id].name;
+        const subIndustryName : string = lists.subIndustries[businessData.sub_industry_id];
+        const reasonForSelling = lists.reasonsForSelling[businessData.reason_for_selling_id];
+        const successorOnboarding = lists.successorOnboarding[businessData.successor_onboarding_id];
+        const sellerFinancing = lists.sellerFinancing[businessData.seller_financing_id];
+
+        businessData.industry_name = industryName;
+        businessData.sub_industry_name = subIndustryName;
+        businessData.reason_for_selling = reasonForSelling;
+        businessData.successor_onboarding = successorOnboarding;
+        businessData.seller_financing = sellerFinancing;
+
+        return businessData;
     } catch (err) {
         console.error(err);
         throw err;

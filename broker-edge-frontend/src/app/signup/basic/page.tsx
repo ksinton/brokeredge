@@ -11,6 +11,7 @@ export default function SignupBasic() {
 
     const host = window.location.hostname;
 
+
     const router = useRouter();
 
     const nameField = useRef<HTMLInputElement>(null);

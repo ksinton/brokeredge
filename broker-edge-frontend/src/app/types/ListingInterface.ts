@@ -1,6 +1,6 @@
 export default interface listingInterface {
-    title: string;
-    description: string;
-    price: number;
-    link?: string;
+    name: string;
+    sellers_description: string;
+    desired_price: number;
+    route?: string;
 }

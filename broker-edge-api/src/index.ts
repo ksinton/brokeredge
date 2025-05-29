@@ -5,55 +5,23 @@ import bodyParser from "body-parser";
 
 // local project imports
 import {whitelistFields, truncateString} from "./utils/whiteListing";
-import { addBusiness, updateBusiness, getBusinessListings} from "./services/persistBusiness";
+import { addBusiness, updateBusiness, getBusinessListings, getBusiness} from "./services/persistBusiness";
 import { addUser, updateUser} from "./services/persistUser";
-import { getIndustries, getSubIndustries, getReasonsForSelling, getSellerFinancing, getSuccessorOnboarding } from "./services/persistLists";
+import { getLists } from "./services/persistLists";
+
 import { newAuthorizationToken, authorize} from "./services/authorization";
 import { db } from "./config/db";
+
+import { listsInterface } from "./types/listsInterface";
 
 // create the redis client
 const client = createClient({
         url: 'redis://redis:6379'
 });
 
-interface industryDataInterface {
-        id: number;
-        name: string;
-}
-
-interface subIndustryDataInterface {
-        id: number;
-        industryId: number;
-        name: string;
-}
-
-interface reasonsForSellingDataInterface {
-        id: number;
-        name: string;
-}
-
-interface sellerFinancingDataInterface {
-        id: number;
-        name: string;
-}
-
-interface successorOnboardingDataInterface {
-        id: number;
-        name: string;
-}
-
-interface industry {
-        name: string;
-        subIndustries: string[];
-}
-
-interface industriesInterface { [key: number]: industry }
-interface subIndustriesInterface { [key: number]: string }
-interface reasonsForSellingInterface { [key: number]: string }
-interface sellerFinancingInterface { [key: number]: string }
-interface successorOnboardingInterface { [key: number]: string }
-
 const app = express();
+
+let lists : listsInterface;
 
 app.use(cookieParser()); // Add this middleware
 
@@ -63,68 +31,17 @@ app.use(bodyParser.json())
 
 const PORT = process.env.PORT || 8000;
 
-let industryData: industryDataInterface[] | null = [];
-let subIndustryData: subIndustryDataInterface[] | null = [];
-let reasonsForSellingData: subIndustryDataInterface[] | null = [];
-let sellerFinancingData: sellerFinancingDataInterface[] | null = [];
-let successorOnboardingData: successorOnboardingDataInterface[] | null = [];
-
-let industries : industriesInterface = {};
-let subIndustries : subIndustriesInterface = {};
-let reasonsForSelling : reasonsForSellingInterface = {};
-let sellerFinancing : sellerFinancingInterface = {};
-let successorOnboarding : successorOnboardingInterface = {};
-
 
 (async () => {
-        industryData = await getIndustries(db);
 
-        if (industryData) {
+        lists = await getLists(db);
 
-                industryData.forEach((industryObj: industryDataInterface) => {
-                        industries[industryObj.id] = { name: industryObj.name, subIndustries: []}
-                })
-        }
-
-        subIndustryData = await getSubIndustries(db);
-
-        if(subIndustryData) {
-                subIndustryData.forEach((subIndustryObj: subIndustryDataInterface) => {
-                        subIndustries[subIndustryObj.id] = subIndustryObj.name;
-                        industries[subIndustryObj.industryId].subIndustries.push(subIndustryObj.name);
-
-                })
-        }
-
-        reasonsForSellingData = await getReasonsForSelling(db);
-
-        if(reasonsForSellingData) {
-                reasonsForSellingData.forEach((reasonsForSellingObj: reasonsForSellingDataInterface) => {
-                        reasonsForSelling[reasonsForSellingObj.id] = reasonsForSellingObj.name;
-                })
-        }
-
-        sellerFinancingData = await getSellerFinancing(db);
-
-        if(sellerFinancingData) {
-                sellerFinancingData.forEach((sellerFinancingObj: sellerFinancingDataInterface) => {
-                        sellerFinancing[sellerFinancingObj.id] = sellerFinancingObj.name;
-                })
-        }
-
-        successorOnboardingData = await getSuccessorOnboarding(db);
-
-        if(successorOnboardingData) {
-                successorOnboardingData.forEach((successorOnboardingObj: successorOnboardingDataInterface) => {
-                        successorOnboarding[successorOnboardingObj.id] = successorOnboardingObj.name;
-                })
-        }
-
-        console.log("industries", industries);
-        console.log("sub industries", subIndustries);
-        console.log("reasonsForSelling", reasonsForSelling);
-        console.log("sellerFinancing", sellerFinancing);
-        console.log("successorOnboarding", successorOnboarding);
+        console.log("lists.industries", lists.industries);
+        console.log("lists.subIndustries", lists.subIndustries);
+        console.log("lists.reasonsForSelling", lists.reasonsForSelling);
+        console.log("lists.sellerFinancing", lists.sellerFinancing);
+        console.log("lists.successorOnboarding", lists.successorOnboarding);
+        console.log("lists.sites777", lists.sites);
 
         app.listen(PORT, async () => {
                 await client.connect();
@@ -139,12 +56,35 @@ app.get("/", (req: express.Request, res: express.Response) => {
     }
 )
 
-app.get("/businesses", async (req: express.Request, res: express.Response) => {
+app.get("/businesses/:host", async (req: express.Request, res: express.Response) => {
 
-        const businessListings = await getBusinessListings(db, 2);
+        const host : string = req.params.host;
+        const siteId = lists.sites[host];
 
-        if (industryData) {
+        console.log("siteId %%%%%", siteId);
+        console.log("host %%%%%", host);
+
+        const businessListings = await getBusinessListings(db, siteId);
+
+        if (businessListings) {
                 res.json({success: true, data: businessListings});
+        } else {
+                res.json({success: false});
+        }
+})
+
+app.get("/business/:route", async (req: express.Request, res: express.Response) => {
+
+        const route : string = req.params.route;
+
+        let businessData :any  = null;
+
+        if (route) {
+                businessData = await getBusiness(db, route, lists);
+        }
+
+        if (businessData) {
+                res.json({success: true, data: businessData});
         } else {
                 res.json({success: false});
         }
