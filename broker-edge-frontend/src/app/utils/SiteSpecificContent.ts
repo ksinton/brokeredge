@@ -28,6 +28,21 @@ class SiteSpecificContent {
 
         return output;
     }
+
+    static mainPageTitle(host: String): string {
+
+        let output = "";
+
+        switch (true) {
+            case host?.includes("brokeredgeinc.com"):
+                output = "Businesses Listed for Sale";
+                break;
+            default:
+                output = "Buy a Local Business";
+        }
+
+        return output;
+    }
 }
 
 export default SiteSpecificContent;

@@ -26,7 +26,7 @@ export default function BusinessListing({BusinessData, host} : { BusinessData: a
 
     <>
 
-    <div className="text-gray-700 md:mx-4 p-4">
+    <div className={SiteSpecificStyles.businessListingHeading(host)}>
         <h1 className={SiteSpecificStyles.listingHeading(host)}>{BusinessData.name}</h1>
         <div className="text-lg pt-2">{BusinessData.industry_name} / {BusinessData.sub_industry_name}</div>
     </div>

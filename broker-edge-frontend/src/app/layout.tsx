@@ -4,6 +4,8 @@ import React from 'react';
 import ReactQueryProvider from "./utils/providers/ReactQueryProvider";
 import { headers } from 'next/headers'
 import "./globals.css";
+import BrokerEdgeHeader from "./components/brokeredgeinc/Header";
+import BrokerEdgeFooter from "./components/brokeredgeinc/Footer";
 import FairfieldHeader from "./components/fairfieldbusinesslistings/Header";
 import FairfieldFooter from "./components/fairfieldbusinesslistings/Footer";
 import IowaCityHeader from "./components/iowacitybusinessesforsale/Header";
@@ -32,6 +34,10 @@ export const metadata: Metadata = {
 
 // Map hostnames to layout components
 const layoutMap: Record<string, { Header: React.ComponentType; Footer: React.ComponentType }> = {
+    "brokeredgeinc.com": {
+        Header: BrokerEdgeHeader,
+        Footer: BrokerEdgeFooter,
+    },
     "fairfieldbusinesslistings.com": {
         Header: FairfieldHeader,
         Footer: FairfieldFooter,

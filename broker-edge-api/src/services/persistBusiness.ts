@@ -26,8 +26,16 @@ export const addBusiness = async (db: any, businessData: any, userId: number | n
 export const getBusinessListings  = async (db: any, siteId: number): Promise< any[] | null > => {
 
     try {
-        const query = `SELECT business.route, business.desired_price, business.name, SUBSTRING(business.sellers_description, 1, 330) AS sellers_description FROM business INNER JOIN sites_businesses ON business.id = sites_businesses.business_id WHERE sites_businesses.site_id = ${siteId}`;
-        const [result] = await db.query(query);
+        let query;
+        let result;
+
+        if (siteId == 3) {
+            query = 'SELECT business.route, business.desired_price, business.name, SUBSTRING(business.sellers_description, 1, 330) AS sellers_description FROM business';
+        } else {
+            query = `SELECT business.route, business.desired_price, business.name, SUBSTRING(business.sellers_description, 1, 330) AS sellers_description FROM business INNER JOIN sites_businesses ON business.id = sites_businesses.business_id WHERE sites_businesses.site_id = ${siteId}`;
+        }
+
+        [result] = await db.query(query);
 
         return result;
     } catch (err) {

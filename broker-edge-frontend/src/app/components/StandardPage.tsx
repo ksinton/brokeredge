@@ -11,7 +11,7 @@ export default function StandardPage({ heading, children }: {
 
     return (
         <div>
-            <div className="text-gray-700 md:mx-4 p-4">
+            <div className={SiteSpecificStyles.standardPageCont(host)}>
 
                 <h1 className={SiteSpecificStyles.standardHeading(host)}>{heading}</h1>
 
