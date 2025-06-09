@@ -31,9 +31,9 @@ export default function BusinessListing({BusinessData, host} : { BusinessData: a
         <div className="text-lg pt-2">{BusinessData.industry_name} / {BusinessData.sub_industry_name}</div>
     </div>
 
-    <div className="flex flex-col md:flex-row gap-8 p-4 md:p-8 bg-[#f7f6f6] text-gray-700 w-full">
+    <div className="flex flex-col md:flex-row gap-3 md:gap-8 p-4 md:p-8 bg-[#f7f6f6] text-gray-700 w-full">
 
-        <div className="flex flex-col gap-6 md:gap-8 text-lg">
+        <div className="flex flex-col gap-3 md:gap-8 text-lg">
             <div className="flex items-center gap-2 min-h-[58px]">
                 <Image src="/icons/price_tag.png" alt="1" width="55" height="55" className="h-[30px] w-[30px] md:h-[35px] md:w-[35px] mr-1"/>
                 Desired Price ${BusinessData.desired_price}
@@ -50,7 +50,7 @@ export default function BusinessListing({BusinessData, host} : { BusinessData: a
 
         </div>
 
-        <div className="flex flex-col gap-6 md:gap-8 text-lg">
+        <div className="flex flex-col gap-3 md:gap-8 text-lg">
             <div className="flex items-center gap-2 min-h-[58px]">
                 <Image src="/icons/money.png" alt="1" width="55" height="55" className="h-[30px] w-[30px] md:h-[35px] md:w-[35px] mr-1"/>
                 Seller Financing: {BusinessData.seller_financing}
@@ -66,7 +66,7 @@ export default function BusinessListing({BusinessData, host} : { BusinessData: a
 
         </div>
 
-        <div className="flex flex-col gap-6 md:gap-8 text-lg">
+        <div className="flex flex-col gap-3 md:gap-8 text-lg">
             <div className="flex items-center gap-2 min-h-[58px]">
                 <Image src="/icons/phone.png" alt="1" width="55" height="55" className="h-[27px] w-[27px] md:h-[31px] md:w-[31px] mr-1"/>
                 {BusinessData.phone}<br/>
