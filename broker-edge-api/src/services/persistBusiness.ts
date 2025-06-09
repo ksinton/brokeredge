@@ -47,23 +47,28 @@ export const getBusinessListings  = async (db: any, siteId: number): Promise< an
 export const getBusiness  = async (db: any, route: string, lists: listsInterface): Promise< any[] | null > => {
 
     try {
-        const query = `SELECT * FROM business WHERE route = "${route}"`;
+        const query = `CALL GetBusinessAndImages('${route}')`;
         const [result] = await db.query(query);
 
-        const businessData = await result[0];
+        const rawBusinessData = await result;
+        const businessData = rawBusinessData[0][0];
 
-        console.log("businessData ****** 68676767867",businessData);
+        // console.log("businessData ****** ########",rawBusinessData);
         const industryName : string = lists.industries[businessData.industry_id].name;
         const subIndustryName : string = lists.subIndustries[businessData.sub_industry_id];
         const reasonForSelling = lists.reasonsForSelling[businessData.reason_for_selling_id];
         const successorOnboarding = lists.successorOnboarding[businessData.successor_onboarding_id];
         const sellerFinancing = lists.sellerFinancing[businessData.seller_financing_id];
+        const images =  rawBusinessData[1];
 
         businessData.industry_name = industryName;
         businessData.sub_industry_name = subIndustryName;
         businessData.reason_for_selling = reasonForSelling;
         businessData.successor_onboarding = successorOnboarding;
         businessData.seller_financing = sellerFinancing;
+        businessData.images = images;
+
+        console.log("businessData ready ^^^^^",businessData);
 
         return businessData;
     } catch (err) {

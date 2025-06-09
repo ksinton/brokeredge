@@ -1,50 +1,37 @@
 import Image from "next/image";
 import React from 'react';
-import { Shadows_Into_Light } from 'next/font/google';
-import { ChevronRightIcon, Bars3Icon } from '@heroicons/react/24/solid';
 import Link from "next/link";
-
-const shadowsIntoLight = Shadows_Into_Light({
-    subsets: ['latin'],
-    weight: '400',
-});
+import TopMenu from "../TopMenu";
+import {MenuItem} from "../../types/menuInterface";
 
 export default function Header() {
+
+    const menuItems:  MenuItem[] = [
+        {
+            text: "Home",
+            link: "/",
+        },
+        {
+            text: "Sell Your Business",
+            link: "/sell-your-business",
+        },
+        {
+            text: "Why Use Us",
+            link: "/why-use-us",
+        },
+        {
+            text: "Press",
+            link: "/press",
+        },
+        {
+            text: "Contact Us",
+            link: "/contact-us",
+        },
+    ]
+
     return (
         <>
-
-            <div
-                className="bg-[#04112b] flex space-between p-0 md:p-3 h-[23px] md:h-[38px]">
-                <div className="hidden md:flex space-x-4 text-m ml-1">
-                    <div className="flex space-x-1 items-center">
-                        <ChevronRightIcon className="w-4 h-4"/>
-                        <Link href="/sell-your-business">
-                            <div>Sell Your Business</div>
-                        </Link>
-
-                    </div>
-                    <div className="flex space-x-1 items-center">
-                        <ChevronRightIcon className="w-4 h-4"/>
-                        <Link href="/why-use-us">
-                            <div>Why Use Us</div>
-                        </Link>
-                    </div>
-                    <div className="flex space-x-1 items-center">
-                        <ChevronRightIcon className="w-4 h-4"/>
-                        <Link href="/newsroom">
-                            <div>Newsroom</div>
-                        </Link>
-                    </div>
-                    <div className="flex space-x-1 items-center">
-                        <ChevronRightIcon className="w-4 h-4"/>
-                        <Link href="/contact-us">
-                            <div>Contact Us</div>
-                        </Link>
-                    </div>
-                </div>
-
-
-            </div>
+            <TopMenu menuItems={menuItems}/>
 
             <Link href="/">
                 <Image

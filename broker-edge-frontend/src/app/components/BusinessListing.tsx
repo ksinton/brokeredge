@@ -18,7 +18,7 @@ export default function BusinessListing({BusinessData, host} : { BusinessData: a
     const [activeIndex, setActiveIndex] = useState(0);
     const [open, setOpen] = useState(false);
     const [openIndex, setOpenIndex] = useState(0);
-    //const totalSlides = BusinessData.numberOfImages;
+    const totalSlides = BusinessData.images.length;
 
     console.log("BusinessData ********", BusinessData);
 
@@ -97,48 +97,50 @@ export default function BusinessListing({BusinessData, host} : { BusinessData: a
 
             <div className="relative mt-[20px] pb-[23px] md:mt-20px">
 
-                {/*<Swiper*/}
-                {/*    onSwiper={(swiper) => (swiperRef.current = swiper)}*/}
-                {/*    onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}*/}
-                {/*    modules={[Navigation, Autoplay]}*/}
-                {/*    autoplay={{*/}
-                {/*        delay: 5000, // ✅ 3 seconds between slides*/}
-                {/*        disableOnInteraction: false, // ✅ keeps autoplay even after user interaction*/}
-                {/*    }}*/}
-                {/*    direction="vertical"*/}
-                {/*    zoom={true}*/}
-                {/*    spaceBetween={10}*/}
-                {/*    slidesPerView={1}*/}
-                {/*    className="w-[291px] h-[440px] md:h-[481px] md:w-[320px] lg:h-[553px] lg:w-[368px] xl:h-[601.25px] xl:w-[400px]"*/}
-                {/*>*/}
-                {/*    {BusinessData.images.map((image, index) => {*/}
+                <Swiper
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                    modules={[Navigation, Autoplay]}
+                    autoplay={{
+                        delay: 5000, // ✅ 3 seconds between slides
+                        disableOnInteraction: false, // ✅ keeps autoplay even after user interaction
+                    }}
+                    direction="vertical"
+                    zoom={true}
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    className="w-[291px] h-[440px] md:h-[481px] md:w-[320px] lg:h-[553px] lg:w-[368px] xl:h-[601.25px] xl:w-[400px]"
+                >
+                    {BusinessData.images.map((image: any, index : number) => {
 
-                {/*        return(*/}
-                {/*            <SwiperSlide key={index}>*/}
-                {/*                <div className="swiper-zoom-container">*/}
-                {/*                    <Image src={image} alt="1" width="638" height="879"*/}
-                {/*                           className="cursor-pointer"*/}
-                {/*                           onClick={() => {*/}
-                {/*                                setOpenIndex(index);*/}
-                {/*                                setOpen(true);*/}
-                {/*                    }}/>*/}
-                {/*                </div>*/}
-                {/*            </SwiperSlide>*/}
-                {/*        );*/}
+                        return(
+                            <SwiperSlide key={index}>
+                                <div className="swiper-zoom-container">
+                                    <Image src={image.url} width={image.width} height={image.height}
+                                           className="cursor-pointer"
+                                           onClick={() => {
+                                                setOpenIndex(index);
+                                                setOpen(true);
+                                            }}
+                                            alt={image.alt}
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        );
 
-                {/*    })}*/}
+                    })}
 
-                {/*</Swiper>*/}
+                </Swiper>
 
-                {/*{activeIndex > 0 && (*/}
-                {/*    <Image src="/icons/arrow.png" alt="previous image arrow" width="35" height="19" onClick={() => swiperRef.current?.slidePrev()}*/}
-                {/*        className="absolute top-0 z-10 left-[calc(50%-24px)] cursor-pointer"/>*/}
-                {/*)}*/}
+                {activeIndex > 0 && (
+                    <Image src="/icons/arrow.png" alt="previous image arrow" width="35" height="19" onClick={() => swiperRef.current?.slidePrev()}
+                        className="absolute top-0 z-10 left-[calc(50%-24px)] cursor-pointer"/>
+                )}
 
-                {/*{(totalSlides > 0 && activeIndex < totalSlides - 1) && (*/}
-                {/*    <Image src="/icons/arrow.png" alt="next image arrow" width="35" height="19" onClick={() => swiperRef.current?.slideNext()}*/}
-                {/*           className="absolute bottom-0  rotate-180 z-10 left-[calc(50%-8px)] cursor-pointer"/>*/}
-                {/*)}*/}
+                {(totalSlides > 0 && activeIndex < totalSlides - 1) && (
+                    <Image src="/icons/arrow.png" alt="next image arrow" width="35" height="19" onClick={() => swiperRef.current?.slideNext()}
+                           className="absolute bottom-0  rotate-180 z-10 left-[calc(50%-8px)] cursor-pointer"/>
+                )}
 
             </div>
 
@@ -152,7 +154,7 @@ export default function BusinessListing({BusinessData, host} : { BusinessData: a
             close={() => setOpen(false)}
             styles={{container: { backgroundColor: "rgba(0, 0, 0, .7)" }, slide: {height: "90vh", top:"50%", transform: "translateY(-50%)"} }}
             index={openIndex}
-            slides={BusinessData.images.map((src : any) => ({ src }))}
+            slides={BusinessData.images.map((image : any) => ({ src: image.url }))}
             controller={{
                 closeOnBackdropClick: true
             }} // Enable closing on overlay click

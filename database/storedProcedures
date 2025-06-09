@@ -1,0 +1,21 @@
+DELIMITER //
+
+CREATE PROCEDURE GetBusinessAndImages(IN route_in VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci)
+BEGIN
+  DECLARE business_id INT;
+
+  -- Get the business ID based on the route, explicitly casting collation for comparison
+  SELECT id INTO business_id
+  FROM business
+  WHERE route COLLATE utf8mb4_general_ci = route_in COLLATE utf8mb4_general_ci
+  LIMIT 1;
+
+  -- If business exists, return both the business row and its related images
+  IF business_id IS NOT NULL THEN
+    SELECT * FROM business WHERE id = business_id;
+    SELECT url, width, height, alt FROM business_images WHERE business_id = business_id;
+  END IF;
+END //
+
+DELIMITER ;
+

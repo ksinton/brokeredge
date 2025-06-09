@@ -8,7 +8,7 @@ export default function Page() {
     const host = headers().get('x-custom-host') || '';
 
     return (
-        <StandardPage heading="Newsroom">
+        <StandardPage heading="Press">
 
             <a href="https://finance.yahoo.com/news/broker-edge-launches-reinvigorate-business-183600039.html">
                 <p className="font-bold pb-1">May 16, 2025</p>

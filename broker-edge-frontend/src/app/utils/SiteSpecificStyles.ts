@@ -193,6 +193,75 @@ class SiteSpecificStyles {
 
         return outputClasses;
     }
+
+    static topMenuCont(host: String): string {
+
+        let outputClasses = "";
+
+        switch (true) {
+            case host?.includes("fairfieldbusinesslistings.com"):
+                outputClasses = "bg-[#013258] space-between p-0 md:p-3 h-[23px] md:h-[38px] hidden md:flex";
+                break;
+            case host?.includes("iowacitybusinessesforsale.com"):
+                outputClasses = "bg-[#200571] space-between p-0 md:p-3 h-[23px] md:h-[38px] hidden md:flex";
+                break;
+            default:
+                outputClasses = "bg-[#04112b] space-between p-0 md:p-3 h-[23px] md:h-[38px] hidden md:flex";
+        }
+
+        return outputClasses;
+    }
+
+    static hamburgerBaseStyles(host: String): string {
+
+        let outputClasses = "";
+
+        switch (true) {
+            case host?.includes("fairfieldbusinesslistings.com"):
+                outputClasses = "tham tham-e-spin tham-w-8 absolute right-4 top-[30px] z-30 hover:opacity-100 block md:hidden";
+                break;
+            default:
+                outputClasses = "tham tham-e-spin tham-w-8 absolute right-4 top-4 z-30 hover:opacity-100 block md:hidden";
+        }
+
+        return outputClasses;
+    }
+
+    static hamburgerInnerStyles(host: String): string {
+
+        let outputClasses = "";
+
+        switch (true) {
+            case host?.includes("fairfieldbusinesslistings.com"):
+                outputClasses = "tham-inner bg-[#316427]";
+                break;
+            case host?.includes("iowacitybusinessesforsale.com"):
+                outputClasses = "tham-inner bg-[#200571]";
+                break;
+            default:
+                outputClasses = "tham-inner bg-[#04112b]";
+        }
+
+        return outputClasses;
+    }
+
+    static mobileMenuInnerContBaseStyles(host: String): string {
+
+        let outputClasses = "";
+
+        switch (true) {
+            case host?.includes("fairfieldbusinesslistings.com"):
+                outputClasses = "pt-[60px] px-[20px] text-[#316427] delay-200 text-3xl transition-opacity flex flex-col gap-6";
+                break;
+            case host?.includes("iowacitybusinessesforsale.com"):
+                outputClasses = "pt-[60px] px-[20px] text-[#200571] delay-200 text-3xl transition-opacity flex flex-col gap-6";
+                break;
+            default:
+                outputClasses = "pt-[60px] px-[20px] text-[#04112b] delay-200 text-3xl transition-opacity flex flex-col gap-6";
+        }
+
+        return outputClasses;
+    }
 }
 
 
