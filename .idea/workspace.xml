@@ -102,23 +102,7 @@
       <workItem from="1745615039617" duration="145000" />
       <workItem from="1745941731148" duration="203665000" />
       <workItem from="1747847051129" duration="21357000" />
-      <workItem from="1748017804981" duration="170334000" />
-    </task>
-    <task id="LOCAL-00032" summary="updated price">
-      <option name="closed" value="true" />
-      <created>1743886022166</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1743886022166</updated>
-    </task>
-    <task id="LOCAL-00033" summary="bug fix">
-      <option name="closed" value="true" />
-      <created>1743903462086</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1743903462086</updated>
+      <workItem from="1748017804981" duration="171087000" />
     </task>
     <task id="LOCAL-00034" summary="bug fix">
       <option name="closed" value="true" />
@@ -496,7 +480,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749587485291</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="update nginx to include missing www">
+      <option name="closed" value="true" />
+      <created>1749589518808</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1749589518808</updated>
+    </task>
+    <task id="LOCAL-00082" summary="update nginx to include missing www">
+      <option name="closed" value="true" />
+      <created>1749589666551</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1749589666551</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +528,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="updated API Volumes" />
     <MESSAGE value="updated Docker for phpMyAdmin to work on sub domain&#10;got the multi site architecture working in basic form" />
     <MESSAGE value="Got the multisite working with a new site Iowa Businesses for Sale" />
     <MESSAGE value="Got site working with a Docker production deploy" />
@@ -553,6 +552,7 @@
     <MESSAGE value="Tigtened up spacing on the business listing pages" />
     <MESSAGE value="nginx update and new sql file for the database backup" />
     <MESSAGE value="update docker-compose.yml to support port 443" />
-    <option name="LAST_COMMIT_MESSAGE" value="update docker-compose.yml to support port 443" />
+    <MESSAGE value="update nginx to include missing www" />
+    <option name="LAST_COMMIT_MESSAGE" value="update nginx to include missing www" />
   </component>
 </project>
