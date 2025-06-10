@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d2f177b5-e0c2-43a5-b797-beb457c7d4ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-api/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-api/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-api/src/services/authorization.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-api/src/services/authorization.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-api/src/services/persistBusiness.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-api/src/services/persistBusiness.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/broker-edge-api/src/services/persistUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-api/src/services/persistUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend-static/src/app/businesses/sun-keto/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend-static/src/app/businesses/sun-keto/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/broker-edge-frontend-static/src/app/types/BusinessInterface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/broker-edge-frontend-static/src/app/types/BusinessInterface.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,41 +29,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kimsinton/src/broker-edge/broker-edge-frontend-static/src/app/why-use-us&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/kimsinton/src/broker-edge/broker-edge-frontend-static/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/kimsinton/src/broker-edge/broker-edge-frontend/src/app/types",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/kimsinton/src/broker-edge/broker-edge-frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/broker-edge-frontend-static/src/app/why-use-us" />
-      <recent name="$PROJECT_DIR$/broker-edge-frontend-static/src/app/contact-us" />
-      <recent name="$PROJECT_DIR$/broker-edge-frontend-static/src/app/businesses/sun-keto" />
-      <recent name="$PROJECT_DIR$/" />
-      <recent name="$PROJECT_DIR$/broker-edge-frontend" />
+      <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app/types" />
+      <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app/press" />
+      <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app/components" />
+      <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app/components/iowacitybusinessesforsale" />
+      <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app/" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/broker-edge-frontend-static/public/sites/fairfield" />
+      <recent name="$PROJECT_DIR$/broker-edge-frontend-static/public/icons" />
       <recent name="$PROJECT_DIR$/broker-edge-frontend-static/public/businesses/sun-keto" />
       <recent name="$PROJECT_DIR$/broker-edge-frontend/src/app" />
       <recent name="$PROJECT_DIR$/broker-edge-api/src/config" />
-      <recent name="$PROJECT_DIR$/broker-edge-api/src" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -96,255 +95,14 @@
       <workItem from="1743624559292" duration="7109000" />
       <workItem from="1743741779425" duration="367000" />
       <workItem from="1743797755967" duration="36129000" />
-      <workItem from="1744164157799" duration="51431000" />
-    </task>
-    <task id="LOCAL-00001" summary="Added white background to body&#10;Fixed position of sell your business button">
-      <option name="closed" value="true" />
-      <created>1734378309764</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1734378309764</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Fixed package JSON file">
-      <option name="closed" value="true" />
-      <created>1734379099172</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1734379099172</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Fixed package JSON file">
-      <option name="closed" value="true" />
-      <created>1734379123625</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1734379123625</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Adding unstaged files">
-      <option name="closed" value="true" />
-      <created>1734379315285</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1734379315285</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added the rest API and end points for adding a business / user.  Connected with the front end.">
-      <option name="closed" value="true" />
-      <created>1739978830636</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1739978830636</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added white Listing and Validation">
-      <option name="closed" value="true" />
-      <created>1740341979063</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1740341979063</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added SQL for creating database">
-      <option name="closed" value="true" />
-      <created>1740348565397</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1740348565397</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added SQL for creating database">
-      <option name="closed" value="true" />
-      <created>1740348568839</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1740348568839</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added SQL for creating database from pgAdmin">
-      <option name="closed" value="true" />
-      <created>1740351017923</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1740351017923</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Adding missing whitelisting method">
-      <option name="closed" value="true" />
-      <created>1740756033767</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1740756033767</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token">
-      <option name="closed" value="true" />
-      <created>1741728208126</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1741728208126</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token">
-      <option name="closed" value="true" />
-      <created>1741728233969</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1741728233969</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token">
-      <option name="closed" value="true" />
-      <created>1741743250394</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1741743250394</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token">
-      <option name="closed" value="true" />
-      <created>1741743496285</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1741743496285</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add node modules to git ignore">
-      <option name="closed" value="true" />
-      <created>1741743641899</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1741743641899</updated>
-    </task>
-    <task id="LOCAL-00016" summary="add node modules to git ignore">
-      <option name="closed" value="true" />
-      <created>1741743648890</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1741743648890</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add node modules to git ignore">
-      <option name="closed" value="true" />
-      <created>1741744060701</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1741744060701</updated>
-    </task>
-    <task id="LOCAL-00018" summary="added nginx&#10;using domains with local hosts file&#10;moved api to folder /api&#10;updated styles on signup flow">
-      <option name="closed" value="true" />
-      <created>1741967852904</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1741967852904</updated>
-    </task>
-    <task id="LOCAL-00019" summary="updated the database backup file&#10;moved footer to the bottom">
-      <option name="closed" value="true" />
-      <created>1742486748381</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1742486748381</updated>
-    </task>
-    <task id="LOCAL-00020" summary="updated the database backup file&#10;moved footer to the bottom">
-      <option name="closed" value="true" />
-      <created>1742486757373</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1742486757373</updated>
-    </task>
-    <task id="LOCAL-00021" summary="updated the database backup file">
-      <option name="closed" value="true" />
-      <created>1742487939304</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1742487939304</updated>
-    </task>
-    <task id="LOCAL-00022" summary="switched to MariaDB">
-      <option name="closed" value="true" />
-      <created>1742955625814</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1742955625814</updated>
-    </task>
-    <task id="LOCAL-00023" summary="add mysql2 to package json">
-      <option name="closed" value="true" />
-      <created>1742958677370</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1742958677370</updated>
-    </task>
-    <task id="LOCAL-00024" summary="add mysql2 to package json">
-      <option name="closed" value="true" />
-      <created>1742958680461</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1742958680461</updated>
-    </task>
-    <task id="LOCAL-00025" summary="add mysql2 to package json">
-      <option name="closed" value="true" />
-      <created>1742959476991</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1742959476991</updated>
-    </task>
-    <task id="LOCAL-00026" summary="added broker edge static">
-      <option name="closed" value="true" />
-      <created>1743626597602</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1743626597602</updated>
-    </task>
-    <task id="LOCAL-00027" summary="added broker edge static">
-      <option name="closed" value="true" />
-      <created>1743626603165</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1743626603165</updated>
-    </task>
-    <task id="LOCAL-00028" summary="updated port again in a diffrent spot for production">
-      <option name="closed" value="true" />
-      <created>1743741822609</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1743741822609</updated>
-    </task>
-    <task id="LOCAL-00029" summary="updated port again in a diffrent spot for production">
-      <option name="closed" value="true" />
-      <created>1743741829615</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1743741829615</updated>
-    </task>
-    <task id="LOCAL-00030" summary="updated design">
-      <option name="closed" value="true" />
-      <created>1743868125608</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1743868125608</updated>
-    </task>
-    <task id="LOCAL-00031" summary="remove fake listings">
-      <option name="closed" value="true" />
-      <created>1743885157264</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1743885157264</updated>
+      <workItem from="1744164157799" duration="51903000" />
+      <workItem from="1744388063723" duration="15364000" />
+      <workItem from="1744649674944" duration="3374000" />
+      <workItem from="1744659111297" duration="106133000" />
+      <workItem from="1745615039617" duration="145000" />
+      <workItem from="1745941731148" duration="203665000" />
+      <workItem from="1747847051129" duration="21357000" />
+      <workItem from="1748017804981" duration="170334000" />
     </task>
     <task id="LOCAL-00032" summary="updated price">
       <option name="closed" value="true" />
@@ -394,7 +152,351 @@
       <option name="project" value="LOCAL" />
       <updated>1744292557724</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="removed interview directory temporary">
+      <option name="closed" value="true" />
+      <created>1744292832760</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1744292832760</updated>
+    </task>
+    <task id="LOCAL-00039" summary="updated business listing page design">
+      <option name="closed" value="true" />
+      <created>1744651122275</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1744651122275</updated>
+    </task>
+    <task id="LOCAL-00040" summary="updated business listing page design">
+      <option name="closed" value="true" />
+      <created>1744652449526</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1744652449526</updated>
+    </task>
+    <task id="LOCAL-00041" summary="added missing images">
+      <option name="closed" value="true" />
+      <created>1744652673117</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1744652673117</updated>
+    </task>
+    <task id="LOCAL-00042" summary="updated swiper and added light box&#10;fixed footer typos">
+      <option name="closed" value="true" />
+      <created>1744777736928</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1744777736928</updated>
+    </task>
+    <task id="LOCAL-00043" summary="slight design changes to the business listing page&#10;added phpMyAdmin.sql file that has the latest databse backup &#10;added devtools folder &#10;added docker-compose.yml&#10;added.env for docker">
+      <option name="closed" value="true" />
+      <created>1744949290897</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1744949290897</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Got docker working for the whole site accept phpMyAdmin is still only working on localhost:8081">
+      <option name="closed" value="true" />
+      <created>1745372162108</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1745372162108</updated>
+    </task>
+    <task id="LOCAL-00045" summary="updated API Volumes">
+      <option name="closed" value="true" />
+      <created>1745376809462</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1745376809462</updated>
+    </task>
+    <task id="LOCAL-00046" summary="updated Docker for phpMyAdmin to work on sub domain&#10;got the multi site architecture working in basic form">
+      <option name="closed" value="true" />
+      <created>1746123621325</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1746123621325</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Got the multisite working with a new site Iowa Businesses for Sale">
+      <option name="closed" value="true" />
+      <created>1746634740946</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1746634740946</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Got site working with a Docker production deploy">
+      <option name="closed" value="true" />
+      <created>1746825925223</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1746825925223</updated>
+    </task>
+    <task id="LOCAL-00049" summary="updated example.env file">
+      <option name="closed" value="true" />
+      <created>1746849146972</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1746849146973</updated>
+    </task>
+    <task id="LOCAL-00050" summary="updated example.env file">
+      <option name="closed" value="true" />
+      <created>1746853037825</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1746853037826</updated>
+    </task>
+    <task id="LOCAL-00051" summary="updated the nginx template used outside of docker becuase Docker keeps crashing my ec2">
+      <option name="closed" value="true" />
+      <created>1746914451249</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1746914451249</updated>
+    </task>
+    <task id="LOCAL-00052" summary="updated the nginx template AGAIN used outside of docker becuase Docker keeps crashing my ec2">
+      <option name="closed" value="true" />
+      <created>1746922280307</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1746922280307</updated>
+    </task>
+    <task id="LOCAL-00053" summary="updated the nginx template AGAIN x2 used outside of docker becuase Docker keeps crashing my ec2">
+      <option name="closed" value="true" />
+      <created>1746924334362</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1746924334362</updated>
+    </task>
+    <task id="LOCAL-00054" summary="updated the nginx template AGAIN x3 used outside of docker becuase Docker keeps crashing my ec2">
+      <option name="closed" value="true" />
+      <created>1746924967813</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1746924967813</updated>
+    </task>
+    <task id="LOCAL-00055" summary="updated the nginx template AGAIN x4 used outside of docker becuase Docker keeps crashing my ec2">
+      <option name="closed" value="true" />
+      <created>1746929051040</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1746929051040</updated>
+    </task>
+    <task id="LOCAL-00056" summary="updated the nginx template AGAIN x5 used outside of docker becuase Docker keeps crashing my ec2">
+      <option name="closed" value="true" />
+      <created>1746930251297</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1746930251297</updated>
+    </task>
+    <task id="LOCAL-00057" summary="updated image filename to be all lower case">
+      <option name="closed" value="true" />
+      <created>1747021073315</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1747021073315</updated>
+    </task>
+    <task id="LOCAL-00058" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747108543621</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1747108543622</updated>
+    </task>
+    <task id="LOCAL-00059" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747108924190</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1747108924190</updated>
+    </task>
+    <task id="LOCAL-00060" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747109701880</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1747109701880</updated>
+    </task>
+    <task id="LOCAL-00061" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747110371443</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1747110371443</updated>
+    </task>
+    <task id="LOCAL-00062" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747111389212</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1747111389212</updated>
+    </task>
+    <task id="LOCAL-00063" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747111705761</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1747111705761</updated>
+    </task>
+    <task id="LOCAL-00064" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747111790185</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1747111790185</updated>
+    </task>
+    <task id="LOCAL-00065" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747111901547</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1747111901547</updated>
+    </task>
+    <task id="LOCAL-00066" summary="updated nginx to include brokeredgeinc.com top point to static files">
+      <option name="closed" value="true" />
+      <created>1747111967027</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1747111967027</updated>
+    </task>
+    <task id="LOCAL-00067" summary="updated hosts config example">
+      <option name="closed" value="true" />
+      <created>1747336165902</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1747336165902</updated>
+    </task>
+    <task id="LOCAL-00068" summary="merged brokeredge-frontend-static with brokeredge-frontend">
+      <option name="closed" value="true" />
+      <created>1747628453461</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1747628453461</updated>
+    </task>
+    <task id="LOCAL-00069" summary="merged brokeredge-frontend-static with brokeredge-frontend&#10;&#10;updated hover button color for iowacity site">
+      <option name="closed" value="true" />
+      <created>1747668230406</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1747668230406</updated>
+    </task>
+    <task id="LOCAL-00070" summary="pulling lists into API at startup&#10;Added list data into the database and the sql export is included in git">
+      <option name="closed" value="true" />
+      <created>1747797885931</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1747797885931</updated>
+    </task>
+    <task id="LOCAL-00071" summary="fixed typescript bug that showed in IDE">
+      <option name="closed" value="true" />
+      <created>1747852285167</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1747852285167</updated>
+    </task>
+    <task id="LOCAL-00072" summary="fixed bugs">
+      <option name="closed" value="true" />
+      <created>1747945437707</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1747945437707</updated>
+    </task>
+    <task id="LOCAL-00073" summary="fixed bugs">
+      <option name="closed" value="true" />
+      <created>1747945452960</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1747945452960</updated>
+    </task>
+    <task id="LOCAL-00074" summary="fixed bugs">
+      <option name="closed" value="true" />
+      <created>1747945463919</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1747945463919</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Got the sites pulling data from the database now">
+      <option name="closed" value="true" />
+      <created>1748534946613</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1748534946613</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Got the main broker edge site mostly working">
+      <option name="closed" value="true" />
+      <created>1748802250415</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1748802250415</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Got mobile menu, press  page, and images for listings (pulled fromn the DB) all working.  Woo hoo">
+      <option name="closed" value="true" />
+      <created>1749489638525</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1749489638525</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Tigtened up spacing on the business listing pages">
+      <option name="closed" value="true" />
+      <created>1749493680341</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1749493680341</updated>
+    </task>
+    <task id="LOCAL-00079" summary="nginx update and new sql file for the database backup">
+      <option name="closed" value="true" />
+      <created>1749586951023</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1749586951023</updated>
+    </task>
+    <task id="LOCAL-00080" summary="update docker-compose.yml to support port 443">
+      <option name="closed" value="true" />
+      <created>1749587485291</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1749587485291</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,40 +528,31 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Added white background to body&#10;Fixed position of sell your business button" />
-    <MESSAGE value="Fixed package JSON file" />
-    <MESSAGE value="Adding unstaged files" />
-    <MESSAGE value="Added the rest API and end points for adding a business / user.  Connected with the front end." />
-    <MESSAGE value="Added white Listing and Validation" />
-    <MESSAGE value="Added SQL for creating database" />
-    <MESSAGE value="Added SQL for creating database from pgAdmin" />
-    <MESSAGE value="Adding missing whitelisting method" />
-    <MESSAGE value="Now creates tokens using crypto lib built into node and stores email / password in redis mapped by the new token" />
-    <MESSAGE value="add node modules to git ignore" />
-    <MESSAGE value="added nginx&#10;using domains with local hosts file&#10;moved api to folder /api&#10;updated styles on signup flow" />
-    <MESSAGE value="updated the database backup file&#10;moved footer to the bottom" />
-    <MESSAGE value="updated the database backup file" />
-    <MESSAGE value="switched to MariaDB" />
-    <MESSAGE value="add mysql2 to package json" />
-    <MESSAGE value="added broker edge static" />
-    <MESSAGE value="updated port again in a diffrent spot for production" />
-    <MESSAGE value="updated design" />
-    <MESSAGE value="remove fake listings" />
-    <MESSAGE value="updated price" />
-    <MESSAGE value="bug fix" />
-    <MESSAGE value="in progress design&#10;added interview directory temporary" />
-    <MESSAGE value="removed interview directory temporary" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed interview directory temporary" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/broker-edge-frontend/src/app/page.tsx</url>
-          <line>274</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="updated API Volumes" />
+    <MESSAGE value="updated Docker for phpMyAdmin to work on sub domain&#10;got the multi site architecture working in basic form" />
+    <MESSAGE value="Got the multisite working with a new site Iowa Businesses for Sale" />
+    <MESSAGE value="Got site working with a Docker production deploy" />
+    <MESSAGE value="updated example.env file" />
+    <MESSAGE value="updated the nginx template used outside of docker becuase Docker keeps crashing my ec2" />
+    <MESSAGE value="updated the nginx template AGAIN used outside of docker becuase Docker keeps crashing my ec2" />
+    <MESSAGE value="updated the nginx template AGAIN x2 used outside of docker becuase Docker keeps crashing my ec2" />
+    <MESSAGE value="updated the nginx template AGAIN x3 used outside of docker becuase Docker keeps crashing my ec2" />
+    <MESSAGE value="updated the nginx template AGAIN x4 used outside of docker becuase Docker keeps crashing my ec2" />
+    <MESSAGE value="updated the nginx template AGAIN x5 used outside of docker becuase Docker keeps crashing my ec2" />
+    <MESSAGE value="updated image filename to be all lower case" />
+    <MESSAGE value="updated nginx to include brokeredgeinc.com top point to static files" />
+    <MESSAGE value="updated hosts config example" />
+    <MESSAGE value="merged brokeredge-frontend-static with brokeredge-frontend" />
+    <MESSAGE value="merged brokeredge-frontend-static with brokeredge-frontend&#10;&#10;updated hover button color for iowacity site" />
+    <MESSAGE value="pulling lists into API at startup&#10;Added list data into the database and the sql export is included in git" />
+    <MESSAGE value="fixed typescript bug that showed in IDE" />
+    <MESSAGE value="fixed bugs" />
+    <MESSAGE value="Got the sites pulling data from the database now" />
+    <MESSAGE value="Got the main broker edge site mostly working" />
+    <MESSAGE value="Got mobile menu, press  page, and images for listings (pulled fromn the DB) all working.  Woo hoo" />
+    <MESSAGE value="Tigtened up spacing on the business listing pages" />
+    <MESSAGE value="nginx update and new sql file for the database backup" />
+    <MESSAGE value="update docker-compose.yml to support port 443" />
+    <option name="LAST_COMMIT_MESSAGE" value="update docker-compose.yml to support port 443" />
   </component>
 </project>
