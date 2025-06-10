@@ -83,6 +83,7 @@ services:
     image: nginx:stable
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./nginx/brokeredge.conf:/etc/nginx/conf.d/brokeredge.conf
     depends_on:
