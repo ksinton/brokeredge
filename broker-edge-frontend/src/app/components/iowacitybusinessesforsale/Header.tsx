@@ -5,6 +5,7 @@ import { ChevronRightIcon, Bars3Icon } from '@heroicons/react/24/solid';
 import Link from "next/link";
 import TopMenu from "../TopMenu";
 import {MenuItem} from "../../types/menuInterface";
+import {headers} from "next/headers";
 
 const shadowsIntoLight = Shadows_Into_Light({
     subsets: ['latin'],
@@ -12,6 +13,8 @@ const shadowsIntoLight = Shadows_Into_Light({
 });
 
 export default function Header() {
+
+    const host = headers().get('x-custom-host') || '';
 
     const menuItems:  MenuItem[] = [
         {
@@ -35,7 +38,7 @@ export default function Header() {
     return (
         <>
 
-            <TopMenu menuItems={menuItems}/>
+            <TopMenu menuItems={menuItems} host={host}/>
             
             <Link href="/">
                 <Image

@@ -4,6 +4,7 @@ import { Shadows_Into_Light } from 'next/font/google';
 import Link from "next/link";
 import TopMenu from "../TopMenu";
 import {MenuItem} from "../../types/menuInterface";
+import {headers} from "next/headers";
 
 const shadowsIntoLight = Shadows_Into_Light({
     subsets: ['latin'],
@@ -11,6 +12,8 @@ const shadowsIntoLight = Shadows_Into_Light({
 });
 
 export default function Header() {
+
+    const host = headers().get('x-custom-host') || '';
 
     const menuItems:  MenuItem[] = [
         {
@@ -44,7 +47,7 @@ export default function Header() {
                 />
             </Link>
 
-            <TopMenu menuItems={menuItems}/>
+            <TopMenu menuItems={menuItems} host={host}/>
 
             <div className="relative h-[82px] md:h-[122px] lg:h-[163px]">
 
