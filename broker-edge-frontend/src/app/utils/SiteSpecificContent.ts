@@ -35,7 +35,7 @@ class SiteSpecificContent {
 
         switch (true) {
             case host?.includes("brokeredgeinc.com"):
-                output = "Businesses Listed for Sale";
+                output = "Businesses for Sale";
                 break;
             default:
                 output = "Buy a Local Business";
