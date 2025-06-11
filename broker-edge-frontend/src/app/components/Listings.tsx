@@ -5,9 +5,13 @@ import ListingInterface from "../types/ListingInterface";
 import SiteSpecificStyles from "../utils/SiteSpecificStyles";
 import Utils from "../utils/Utils";
 
-export default function Listings({initialData} : { initialData: ListingInterface[]} ) {
+export default function Listings({initialData, host} : {
+    initialData: ListingInterface[],
+    host: string;
 
-    const host = window.location.hostname;
+    }
+) {
+
     const [listings, setListings] = useState(initialData);
 
     return (

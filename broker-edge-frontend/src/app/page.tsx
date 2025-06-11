@@ -44,7 +44,7 @@ export default async function Home() {
               </div>
           </div>
 
-          <Listings initialData={listingsData}/>
+          <Listings initialData={listingsData} host={host} />
       </>
 
   );

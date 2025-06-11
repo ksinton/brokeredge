@@ -9,11 +9,10 @@ import SiteSpecificStyles from "../utils/SiteSpecificStyles";
 
 type Props = {
     menuItems: MenuItem[];
+    host: string;
 };
 
-export default function TopMenu({menuItems}: Props ) {
-
-    const host = window.location.hostname;
+export default function TopMenu({menuItems, host}: Props ) {
 
     const hamburgerBaseStyles = SiteSpecificStyles.hamburgerBaseStyles(host);
     const mobileMenuContBaseStyles = "absolute bg-white top-0 right-0 z-10 transition-all duration-500"
