@@ -1,18 +1,23 @@
 # api/Dockerfile
 FROM node:20-alpine
 
-# Create and set working directory
-WORKDIR /src
+# Set working directory
+WORKDIR /app
+
+# Copy and set entrypoint
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
 
 # Copy package files and install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install -g pm2 && npm install
 
-# Copy the rest of the source code
+# Copy app source
 COPY . .
 
-# Expose the API port
+# Expose API port
 EXPOSE 8000
 
-# Use the dev script (tsnd for TypeScript live reload)
-CMD ["npm", "run", "dev"]
+# Use entrypoint
+ENTRYPOINT ["/app/entrypoint.sh"]
+
