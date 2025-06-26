@@ -37,7 +37,7 @@ export default function Listings({initialData, host} : {
 
             <div className="text-gray-700 md:mx-4 grid grid-cols-1 md:grid-cols-4 gap-4 pb-32">
                 {
-                    listings.slice(4,7).map((listing: ListingInterface, index) => {
+                    listings.slice(3,7).map((listing: ListingInterface, index) => {
                         return (<div
                             key={index}
                             className="border border-gray-300 p-5 rounded-xl relative">
